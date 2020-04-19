@@ -1,9 +1,12 @@
+# .travis.yml
 language: node_js
+
 node_js:
-  - 'stable'
-cache:
-  directories:
-    - node_modules
+  - 'lts/*'
+
+branches:
+  only:
+    - production
 
 before_install:
   - yarn global add gatsby-cli
@@ -11,13 +14,10 @@ before_install:
 install:
   - yarn install
 
-script:
-  - gatsby build --prefix-paths
+before_script:
+  - git config --global user.name JeonghunKong
+  - git config --global user.email rhdtl78@gmail.com
+  - sed -i "s/__GITHUB_TOKEN__/${GITHUB_TOKEN}/" _config.yml
 
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Travis CI에서 설정가능한 환경 변수입니다.
-  local_dir: public
-  on:
-    branch: production
+script:
+  - yarn build
