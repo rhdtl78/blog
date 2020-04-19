@@ -20,4 +20,4 @@ deploy:
   github_token: $GITHUB_TOKEN # Travis CI에서 설정가능한 환경 변수입니다.
   local_dir: public
   on:
-    branch: master
+    branch: production
