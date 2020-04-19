@@ -6,7 +6,7 @@ node_js:
 
 branches:
   only:
-    - production
+    - develop
 
 before_install:
   - yarn global add gatsby-cli
