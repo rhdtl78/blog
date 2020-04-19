@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - 'lts/*'
 before_script:
-  - yarn install -g gatsby-cli
+  - yarn global add gatsby-cli
 deploy:
   provider: script
   script: yarn install && yarn run deploy
