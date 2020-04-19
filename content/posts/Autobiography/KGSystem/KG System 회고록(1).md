@@ -1,6 +1,5 @@
 ---
 template: post
-priority: 6 
 title: "KG System 회고록 (1)"
 date: "2020-03-30T01:00:00+09:00Z"
 description: "첫 사회 생활, 첫 실무"
