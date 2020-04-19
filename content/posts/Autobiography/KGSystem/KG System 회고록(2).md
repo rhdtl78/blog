@@ -8,7 +8,7 @@ description: "2번째 실무!"
 tags: 
   - Autobiography
   - KGSystem
-priority: 1
+priority: 2
 ---
 ![KG System Logo](/companies/kgsystem.png)
 [KG System 홈페이지](https://kgsystem.co.kr)

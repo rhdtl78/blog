@@ -9,7 +9,7 @@ title: "SpringApplication (1)"
 date: "2020-04-17T01:00:00"
 description: "SpringApplication 학습"
 draft: false
-priority: 1
+priority: 3
 ---
 
 ### 기본적인 Spring Application 실행 방법
