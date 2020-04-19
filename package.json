@@ -8,7 +8,8 @@
     "develop": "yarn run clean && gatsby develop",
     "build": "yarn run clean && gatsby build",
     "clean": "rimraf .cache public",
-    "deploy": "yarn run build --prefix-paths && gh-pages -d public -r https://$GITHUB_TOKEN@github.com/rhdtl78/rhdtl78.github.io.git"
+    "deploy": "yarn run build --prefix-paths && gh-pages -d public -r https://$GITHUB_TOKEN@github.com/rhdtl78/rhdtl78.github.io.git",
+    "test": "echo 'test not configed' "
   },
   "eslintConfig": {
     "extends": "react-app"
