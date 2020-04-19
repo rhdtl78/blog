@@ -1,7 +1,6 @@
-Copycopy code to clipboard
 language: node_js
 node_js:
-  - "lts/*"
+  - 'lts/*'
 before_script:
   - yarn install -g gatsby-cli
 deploy:
