@@ -1,27 +1,12 @@
-# .travis.yml
+Copycopy code to clipboard
 language: node_js
-
 node_js:
-  - 'lts/*'
-
-branches:
-  only:
-    - production
-
-before_install:
-  - yarn global add gatsby-cli
-
-install:
-  - yarn install
-
+  - "lts/*"
 before_script:
-  - git config --global user.name JeonghunKong
-  - git config --global user.email rhdtl78@gmail.com
-
-script:
-  - yarn build
-
+  - yarn install -g gatsby-cli
 deploy:
-  type: git
-  repo: https://${GITHUB_TOKEN}@github.com/rhdtl78/rhdtl78.github.io.git
-  branch: master
+  provider: script
+  script: yarn install && yarn run deploy
+  skip_cleanup: true
+  on:
+    branch: production
