@@ -1,6 +1,6 @@
 module.exports = {
   url: 'https://rhdtl78,github.io',
-  pathPrefix: '/blog',
+  pathPrefix: '/',
   title: "JeongHun Kong's blahblah",
   keywords: 'React, Spring, Laravel',
   subtitle: 'Developer. Optimizer. Learner.',
