@@ -17,7 +17,11 @@ install:
 before_script:
   - git config --global user.name JeonghunKong
   - git config --global user.email rhdtl78@gmail.com
-  - sed -i "s/__GITHUB_TOKEN__/${GITHUB_TOKEN}/" _config.yml
 
 script:
   - yarn build
+
+deploy:
+  type: git
+  repo: https://${GITHUB_TOKEN}@github.com/rhdtl78/rhdtl78.github.io.git
+  branch: master
