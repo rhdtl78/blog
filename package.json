@@ -1,20 +1,20 @@
 {
   "version": "1.0.1",
-  "name": "gatsby-starter-blog-and-cv",
-  "description": "Gatsby starter for Blog and CV",
+  "name": "blog",
+  "description": "Jeonghun Kong's BlahBlah",
   "main": "n/a",
   "private": false,
   "scripts": {
     "develop": "yarn run clean && gatsby develop",
     "build": "yarn run clean && gatsby build",
     "clean": "rimraf .cache public",
-    "release": "standard-version"
+    "deploy": "yarn run build --prefix-paths && gh-pages -d public -r https://$GITHUB_TOKEN@github.com/rhdtl78/rhdtl78.github.io.git"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "repository": "https://github.com/dospolov/gatsby-starter-blog-and-cv",
-  "author": "Marat Dospolov <marat.dospolov@gmail.com>",
+  "repository": "https://github.com/rhdtl78/rhdtl78.github.io.git",
+  "author": "JeongHun Kong <rhdtl78@gmail.com>",
   "license": "MIT",
   "keywords": [
     "gatsby",
@@ -84,6 +84,7 @@
     "concurrently": "5.1.0",
     "eslint": "6.8.0",
     "gatsby-remark-prismjs": "^3.4.3",
+    "gh-pages": "^2.2.0",
     "prettier": "^2.0.4",
     "rimraf": "3.0.2",
     "slate": "^0.57.1",
