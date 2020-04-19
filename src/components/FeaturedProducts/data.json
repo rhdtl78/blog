@@ -1,0 +1,14 @@
+[
+  {
+    "name": "KG System 회고록",
+    "logo": "/companies/kgsystem.png",
+    "description": "KG System에서 프로그래머로서의 첫 경험",
+    "link": "/posts/autobiography/kgsystem/1"
+  },
+  {
+    "name": "Spring 학습",
+    "logo": "/logos/spring.png",
+    "description": "Spring 학습 기록",
+    "link": "/spring/boot/spring-boot-application/1"
+  }
+]
