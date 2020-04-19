@@ -14,14 +14,14 @@ before_install:
 install:
   - yarn install
 
-before_script:
-  - git config --global user.name JeonghunKong
-  - git config --global user.email rhdtl78@gmail.com
-
 script:
   - yarn build
 
 deploy:
-  type: git
-  repo: https://${GITHUB_TOKEN}@github.com/rhdtl78/rhdtl78.github.io.git
-  branch: master
+  provider: pages
+  skip-cleanup: true
+  keep-history: true
+  github-token: $GITHUB_TOKEN
+  local_dir: public
+  on:
+    branch: develop
