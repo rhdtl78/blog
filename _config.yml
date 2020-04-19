@@ -1,4 +1,0 @@
-deploy:
-  type: git
-  repo: https://__GITHUB_TOKEN__@github.com/rhdtl78/rhdtl78.github.io.git
-  branch: master
