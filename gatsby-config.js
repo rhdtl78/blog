@@ -109,12 +109,11 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: 'language-',
+              classPrefix: 'hljs-',
               inlineCodeMarker: null,
               aliases: {
                 sh: 'bash'
-              },
-              showLineNumbers: true
+              }
             }
           },
           {
