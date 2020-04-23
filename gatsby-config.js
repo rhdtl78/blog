@@ -86,7 +86,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: 'Blog by Marat Dospolov'
+            title: "JeongHun Kong's BlahBlah"
           }
         ]
       }
