@@ -9,8 +9,10 @@ title: "SpringApplication (1)"
 date: "2020-04-17T01:00:00"
 description: "SpringApplication 학습"
 draft: false
-priority: 3
+priority: 0
 ---
+![spring logo](https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg)
+
 
 ### 기본적인 Spring Application 실행 방법
 ```java

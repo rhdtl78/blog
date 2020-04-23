@@ -9,9 +9,10 @@ category: Autobiography
 tags: 
   - Autobiography
   - KGSystem
-priority: 1
+priority: 0
 ---
 ![KG System Logo](/companies/kgsystem.png)
+
 [KG System 홈페이지](https://kgsystem.co.kr)
 
 ### 낙하산
