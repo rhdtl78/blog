@@ -8,8 +8,9 @@ tags:
     - Springboot
 date: "2020-04-17T03:00:00"
 summary: "SpringApplication 학습"
-priority: 4
+priority: 0
 ---
+![spring logo](https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg)
 
 ### Application Event
 

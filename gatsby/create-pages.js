@@ -78,6 +78,18 @@ const createPages = async ({ graphql, actions }) => {
         component: path.resolve('./src/templates/post-template.js'),
         context: { slug: edge.node.fields.slug, allCategories }
       })
+    } else if (
+      edge &&
+      edge.node &&
+      edge.node.frontmatter &&
+      edge.node.frontmatter.template &&
+      edge.node.frontmatter.template === 'portfolio'
+    ) {
+      createPage({
+        path: edge.node.fields.slug,
+        component: path.resolve('./src/templates/portfolio-template.js'),
+        context: { slug: edge.node.fields.slug, allCategories }
+      })
     }
     return null
   })

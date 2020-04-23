@@ -9,8 +9,10 @@ title: "외부 설정"
 date: "2020-04-20T01:00:00"
 description: "Spring 외부 설정 학습"
 draft: false
-priority: 5
+priority: 0
 ---
+
+![spring logo](https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg)
 
 ### 외부 설정
 
@@ -58,6 +60,7 @@ test
 =================================
 ```
 
+### 우선 순위
 우선 순위는 굉장히 많은 단계가 있다.
 1. 유저 홈 디렉토리에 있는 spring-boot-dev-tools.properties
 2. 테스트에 있는 @TestPropertySource
@@ -128,6 +131,7 @@ test
 ```
 무사히 실행 된다. 
 
+### 테스트 설정
 테스트 케이스는 어떨까?
 아래와 같이 테스트 케이스를 만들어 테스트를 진행한다.
 ```java
