@@ -20,5 +20,7 @@
   "peacock.color": "#101304",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "editor.formatOnPaste": false
+  "plantuml.exportOutDir": "./",
+  "plantuml.exportSubFolder": false,
+  "plantuml.exportFormat": "svg"
 }
