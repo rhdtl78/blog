@@ -1,14 +1,14 @@
-import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import Sidebar from '../components/Sidebar'
+import React from 'react'
+import '../assets/css/init.css'
+import Copyright from '../components/Copyright'
 import FeaturedProducts from '../components/FeaturedProducts'
 import Feed from '../components/Feed'
+import Layout from '../components/Layout'
 import Page from '../components/Page'
-import Copyright from '../components/Copyright'
 import Pagination from '../components/Pagination'
+import Sidebar from '../components/Sidebar'
 import { useSiteMetadata } from '../hooks'
-import '../assets/css/init.css'
 
 const IndexTemplate = ({ data, pageContext }) => {
   const { title: siteTitle, subtitle: siteSubtitle, keywords } = useSiteMetadata()
@@ -61,7 +61,7 @@ export const query = graphql`
     allMarkdownRemark(
       limit: $postsLimit
       skip: $postsOffset
-      filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } }
+      filter: { frontmatter: { template: { ne: "page" }, draft: { ne: true } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {

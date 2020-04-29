@@ -42,7 +42,7 @@ module.exports = {
     } = await graphql(`
       query CategoriesListQuery {
         allMarkdownRemark(
-          filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } }
+          filter: { frontmatter: { template: { ne: "page" }, draft: { ne: true } } }
         ) {
           group(field: frontmatter___category) {
             fieldValue
