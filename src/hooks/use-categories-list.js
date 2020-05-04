@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 const {
   CATEGORY_COLORS,
   CATEGORY_COLOR_EXTRA
@@ -9,7 +9,7 @@ const useCategoriesList = () => {
     graphql`
       query CategoriesListQuery {
         allMarkdownRemark(
-          filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } }
+          filter: { frontmatter: { template: { ne: "page" }, draft: { ne: true } } }
         ) {
           group(field: frontmatter___category) {
             fieldValue
