@@ -1,0 +1,23 @@
+@startuml email-crawler
+actor EmailCrawler
+participant EmailService
+participant Application
+actor OptionCrawler
+participant SRM
+database Database
+
+autonumber
+EmailCrawler -> EmailService : Monitoring Emails
+EmailService --> EmailCrawler : Crawled Emails
+
+alt new plan catched
+EmailCrawler -> Application : <<Event>> PlanDeployed
+Application -> OptionCrawler : Request crawl options
+OptionCrawler -> SRM : CrawlOptions
+SRM --> OptionCrawler : CrawledOptions
+OptionCrawler --> Application : Results
+Application -> Database : Save all
+else no plan catched
+EmailCrawler -> EmailCrawler : No Plan Cached
+end
+@enduml
