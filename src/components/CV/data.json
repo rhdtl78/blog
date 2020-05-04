@@ -49,6 +49,16 @@
         "jquery"
       ],
       "link": "http://demo.kgnet.co.kr"
+    },
+    {
+      "name": "Simple Weather App",
+      "locationIcon": "google-play-store.svg",
+      "description": "React Native로 작성된 간단한 날씨 앱",
+      "builtWith": [
+        "react",
+        "react-native"
+      ],
+      "link": "https://github.com/rhdtl78/simple-weather-app"
     }
   ],
   "pitchLine": "My passions are — web-development, hot tech, framework",
@@ -103,6 +113,12 @@
       "name": "React",
       "logo": "react.svg",
       "website": "https://github.com/facebook/react",
+      "displayInTopList": true
+    },
+    "react-native": {
+      "name": "React Native",
+      "logo": "react-native.png",
+      "website": "https://reactnative.dev/",
       "displayInTopList": true
     },
     "graphql": {
@@ -200,11 +216,13 @@
     "hard": {
       "featured": [
         "Webpack",
-        "ES6 / ES2017"
+        "ES6 / ES2017",
+        "React",
+        "MobX"
       ],
       "other": [
-        "Adobe Photoshop",
-        "Angular.js",
+        "React Native",
+        "Expo",
         "AWS",
         "Bootstrap",
         "CSS 3",
@@ -213,7 +231,6 @@
         "HTML 5",
         "Jest",
         "LESS",
-        "Material UI",
         "Regexp",
         "REST",
         "SASS",
