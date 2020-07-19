@@ -11,7 +11,7 @@ title: "Spring boot TDD"
 date: "2020-07-19T15:00:00"
 description: "Spring Boot + JPA + JUnit + Mockito"
 draft: false
-priority: 2
+priority: 0
 ---
 
 # AutoMonitor 중간 정리
