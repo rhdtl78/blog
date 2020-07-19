@@ -387,7 +387,7 @@ priority: 0
         3. Refactoring
 
 3. 앞으로...
-   1. Frontend와 Api연동.
-      1. 현재까지 작성된 Api들을 Frontend와 연동해 기능의 동작을 확인한다.
-   2. CI/CD툴과 연동.
-      1. Jenkins로 배치 프로세스를 구성해 테스트를 주기적으로, 자동화 한다.
+    1. Frontend와 Api연동.
+         - 현재까지 작성된 Api들을 Frontend와 연동해 기능의 동작을 확인한다.
+    2. CI/CD툴과 연동.
+         - Jenkins로 배치 프로세스를 구성해 테스트를 주기적으로, 자동화 한다.
