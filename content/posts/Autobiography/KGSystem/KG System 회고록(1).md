@@ -88,3 +88,8 @@ database의 이해도는 간단한 CRUD만 수행하는 정도였으며 쿼리�
   - 이때 까지 대부분의 개발 경험이 혼자 하는 개발이다 보니 클린 코드의 개념이 없었다. 이 기간동안 작성된 코드는 이후에도 유지보수하기 어려웠고, 지인도 건들지 못하는 코드가 되었다. 
 
 2017.06 ~ 2017.09 동안 파트타임은 내게 프로그래머로서의 첫 소득이자 직업으로서의 확신을 얻게 된 계기가 되었다.
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({"id":400629,"template":"carousel","trackingCode":"AF8809335","width":"680","height":"140"});
+</script>

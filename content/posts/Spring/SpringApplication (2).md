@@ -221,3 +221,8 @@ java -jar /path/to/jar.jar --foo=bar
 ![spring arguments CommandLineRunner 실행 결과](images/spring-application-arguments2.png)
 
 순서 지정도 가능하다. (@Order 어노테이션)
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({"id":400629,"template":"carousel","trackingCode":"AF8809335","width":"680","height":"140"});
+</script>
