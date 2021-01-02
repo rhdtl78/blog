@@ -19,3 +19,8 @@ priority: 1
 
 [KG System 회고록 (2)](/posts/autobiography/kgsystem/2)
 - 조금더 발전된 내용을 써먹어본 이야기.
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({"id":400629,"template":"carousel","trackingCode":"AF8809335","width":"680","height":"140"});
+</script>

@@ -21,3 +21,9 @@ MSA 와 분산시스템이 인기를 얻고있는 현재에 관련된 기술을 
 1. [Chpter1. 카프카란 무엇인가?](/posts/kafka/chapter/01)
 2. Chapter2. 카프카 설치 - 생략
 3. [Chapter3. 카프카 디자인.](/posts/kafka/chapter/02)
+
+
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({"id":400629,"template":"carousel","trackingCode":"AF8809335","width":"680","height":"140"});
+</script>
