@@ -6,3 +6,5 @@ npm-debug.log
 .gatsby-context.js
 .idea
 reduxcache*/
+
+.DS_Store
