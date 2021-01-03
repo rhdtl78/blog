@@ -233,4 +233,7 @@ priority: 1
 다만, 본인이 학생이어서 들고 움직여야 하는 경우가 많다면, 다른 선택지를 고르기를 추천한다. 확실히 무겁고, 출퇴근 3시간 (편도 1시간 30분)을 등에 메고 있는 것이 꽤나 체력 소모가 있다.  
 그러나 구매후의 만족감은 확실하다 생각된다. 어떤 작업을 하던 불편을 느낄 부분은 없었으며 2년이 된 현재도 충분히 계속 사용할 수 있을것같다.
 
-
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({"id":400629,"template":"carousel","trackingCode":"AF8809335","width":"680","height":"140"});
+</script>
