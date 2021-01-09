@@ -8,7 +8,7 @@ tags:
 - Book Study
 - OOP
 title: "[오브젝트] Chapter02. 객체지향 프로그래밍."
-date: "2021-01-10T00:00:00"
+date: "2021-01-11T00:00:00"
 description: "객체지향 프로그래밍"
 draft: false
 priority: 1
