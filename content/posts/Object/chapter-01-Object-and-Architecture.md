@@ -1,8 +1,7 @@
 ---
 template: post
 slug: /posts/object/chapter/01
-category:
-- Study
+category: Study
 tags:
 - Object
 - Book Study
