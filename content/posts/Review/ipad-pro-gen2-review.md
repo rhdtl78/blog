@@ -19,7 +19,7 @@ priority: 1
 
 ---
 
-![화면](./ipad-pro-gen2/screen.png)
+![화면](./ipad-pro-gen2/screen.jpeg)
 
 
 <a style="display: inline-block;" href="https://coupa.ng/bPpbQd" target="_blank" referrerpolicy="unsafe-url"><img src="https://static.coupangcdn.com/image/affiliate/banner/6e68ad1a8ccf17ee67f8bb065439b825@2x.jpg" alt="Apple 2020년 iPad Pro 12.9 4세대, Wi-Fi, 128GB, Space Gray" width="120" height="240"></a>
@@ -36,41 +36,41 @@ iPad Pro 4세대 이전에 이미 Galaxy tab s7을 사용하고있었다. 미디
 
 애플 다운 마감을 보여준다. 만듦새는 보자마자 좋다는 것이 바로 느껴지고, 출시 당시에 논란이 있었던 밴드 게이트도 보이지 않았다.  
 
-![박스와 본체](./ipad-pro-gen2/with-box.png)
+![박스와 본체](./ipad-pro-gen2/with-box.jpeg)
 
-![정면](./ipad-pro-gen2/front.png)
+![정면](./ipad-pro-gen2/front.jpeg)
 
 정면에는 강화유리 필름을 붙여놓은 상태이다. 펜슬을 쓰면서 화면을 보호하기 위해 강화유리를 구매했다. 종이 질감은 평이 좋지 않아서 선택하지 않았다. 
 
-![상단](./ipad-pro-gen2/top.png)
+![상단](./ipad-pro-gen2/top.jpeg)
 
 상단에는 다른 것은 없이 전원 버튼만 위치해있다. 스피커는 상 하단에 4개의 스테레오 구성으로 위치해있다.
 
-![하단](./ipad-pro-gen2/bottom.png)
+![하단](./ipad-pro-gen2/bottom.jpeg)
 
 하단에는 마찬가지로 스피커가 위치해있고 USB Type-C 포트가 위치해있다. Type-C 포트 덕에 확장성과 호환성에 무리가 없었다.
 
-![좌측](./ipad-pro-gen2/left.png)
+![좌측](./ipad-pro-gen2/left.jpeg)
 
 좌측에는 별다른 버튼은 없고 마이크만 하나 위치해있다. 
 
-![우측](./ipad-pro-gen2/right.png)
+![우측](./ipad-pro-gen2/right.jpeg)
 
 우측에는 볼륨 버튼과 마그네틱 커넥터가 위치해 있다. 이 마그네틱 커넥터는 예상할 수 있듯이 펜슬을 붙여 충전하는 곳이다. 
 
-![후면](./ipad-pro-gen2/back.png)
+![후면](./ipad-pro-gen2/back.jpeg)
 
 뒷면은 애플 다운 디자인으로, 군더더기 없이 깔끔하다. 그리고 고성능의 카메라와 플래시, 라이다(LiDAR)센서가 위치해있다. 하단에는 매직 키보드를 위한 스마트 커넥터가 위치해있다.
 
-![박스 구성](./ipad-pro-gen2/in-box.png)
+![박스 구성](./ipad-pro-gen2/in-box.jpeg)
 
 박스 구성은 본체, C-to-C Cable, 28W 충전기가 포함되어있다. 충전기는 사무실에 갖다논 상태라 사진에 포함되지 않았다. 
 
-![펜슬](./ipad-pro-gen2/pencil.png)
+![펜슬](./ipad-pro-gen2/pencil.jpeg)
 
 추가로 구매한 Apple Pencil 2세대. 1세대는 호환되지 않는다. 충전할 수 없고, 꽂을 수 없기 때문에 페어링이 어렵다. 
 
-![화면](./ipad-pro-gen2/screen.png)
+![화면](./ipad-pro-gen2/screen.jpeg)
 
 위와 같이 펜슬을 붙여 충전한다. 
 
