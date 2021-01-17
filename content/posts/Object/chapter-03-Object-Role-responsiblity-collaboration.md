@@ -115,3 +115,7 @@ DDD의 문제는 내부 구현이 퍼블릭 인터페이스로 노출된다는 �
 광고 - 파트너스 활동을 통해 일정액의 수수료를 제공받을 수 있음
 
 <a href="https://coupa.ng/bPPGvp" target="_blank" referrerpolicy="unsafe-url"><img src="https://static.coupangcdn.com/image/affiliate/banner/992b484450b1943cf3e528237901e6a2@2x.jpg" alt="오브젝트:코드로 이해하는 객체지향 설계" width="120" height="240"></a>
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({"id":400629,"template":"carousel","trackingCode":"AF8809335","width":"680","height":"140"});
+</script>
