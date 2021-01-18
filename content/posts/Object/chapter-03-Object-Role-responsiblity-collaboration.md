@@ -1,16 +1,16 @@
 ---
 template: post
-slug: /posts/object/chapter/02
+slug: /posts/object/chapter/03
 category: Study
+title: "[오브젝트] Chapter03. 역할, 책임, 협력."
+date: "2021-01-18T00:00:00"
+description: "객체지향 프로그래밍"
+draft: false
+priority: 1
 tags:
 - Object
 - Book Study
 - OOP
-  title: "[오브젝트] Chapter03. 역할, 책임, 협력."
-  date: "2021-01-18T00:00:00"
-  description: "객체지향 프로그래밍"
-  draft: false
-  priority: 1
 ---
 
 객체지향 패러다임의 관점에서 핵심은 **역할(role), 책임(responsibility), 협력(collaboration)** 이다.  

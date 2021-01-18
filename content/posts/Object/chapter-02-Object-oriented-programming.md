@@ -2,15 +2,15 @@
 template: post
 slug: /posts/object/chapter/02
 category: Study
-tags:
-- Object
-- Book Study
-- OOP
 title: "[오브젝트] Chapter02. 객체지향 프로그래밍."
 date: "2021-01-11T00:00:00"
 description: "객체지향 프로그래밍"
 draft: false
 priority: 1
+tags:
+- Object
+- Book Study
+- OOP
 ---
 
 ## 요구사항 확인
