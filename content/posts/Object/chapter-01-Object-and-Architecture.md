@@ -1,7 +1,7 @@
 ---
 template: post
 slug: /posts/object/chapter/01
-category: Study
+category: Object
 title: "[오브젝트] Chapter01. 객체, 설계."
 date: "2021-01-09T00:00:00"
 description: "객체? 설계?"
