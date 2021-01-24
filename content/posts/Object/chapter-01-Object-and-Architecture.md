@@ -71,10 +71,4 @@ tags:
 훌륭한 객체지향 설계는 객체 사이의 의존성을 적절하게 관리하는 설계이다. 객체간의 의존성은 프로그램의 변경을 어렵게하는 주범이다. 
 
 ---
-광고 - 파트너스 활동을 통해 일정액의 수수료를 제공받을 수 있음
-
 <a href="https://coupa.ng/bPPGvp" target="_blank" referrerpolicy="unsafe-url"><img src="https://static.coupangcdn.com/image/affiliate/banner/992b484450b1943cf3e528237901e6a2@2x.jpg" alt="오브젝트:코드로 이해하는 객체지향 설계" width="120" height="240"></a>
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>
-	new PartnersCoupang.G({"id":400629,"template":"carousel","trackingCode":"AF8809335","width":"680","height":"140"});
-</script>

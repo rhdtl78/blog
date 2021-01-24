@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Layout, Tag, Divider } from 'antd'
+import { Divider, Layout, Tag } from 'antd'
 import Comments from './Comments'
 import Content from './Content'
 import Tags from './Tags'
@@ -24,6 +24,16 @@ const Post = ({ post, allCategories }) => {
       <div className="">
         <Content body={html} title={title} date={date} />
       </div>
+
+      <hr />
+      <div className="mt-2 mb-2">
+        <span style={{
+          fontWeight: 'bold'
+        }}>쿠팡 파트너스 활동을 통해 일정액의 수수료를 제공받을 수 있습니다.</span>
+        <div
+          dangerouslySetInnerHTML={{ __html: `<script src="https://ads-partners.coupang.com/g.js"></script><script>new PartnersCoupang.G({"id":400629,"template":"carousel","trackingCode":"AF8809335","width":"100%","height":"100%"});</script>` }} />
+      </div>
+      <hr />
 
       <div className="">
         <Link to={categorySlug} className="">

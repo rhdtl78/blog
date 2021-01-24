@@ -111,11 +111,4 @@ DDD의 문제는 내부 구현이 퍼블릭 인터페이스로 노출된다는 �
 또한 추상화는 설계를 유연하게 만들수 있다. 역할을 다양한 종류의 객체가 놓일 수 있는 슬롯이라 생각할 수 있다. 컴파일 타임과 런타임의 의존성을 다르게 할 수 있다. 
 협력안에서 동일한 책임의 다른 객체는 서로 대체될수 있다. 역할은 다양한 환경에서 다양한 객체들을 수용할 수 있게 해주므로 협력을 유연하게 만든다. 
 
----
-광고 - 파트너스 활동을 통해 일정액의 수수료를 제공받을 수 있음
-
 <a href="https://coupa.ng/bPPGvp" target="_blank" referrerpolicy="unsafe-url"><img src="https://static.coupangcdn.com/image/affiliate/banner/992b484450b1943cf3e528237901e6a2@2x.jpg" alt="오브젝트:코드로 이해하는 객체지향 설계" width="120" height="240"></a>
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>
-	new PartnersCoupang.G({"id":400629,"template":"carousel","trackingCode":"AF8809335","width":"680","height":"140"});
-</script>

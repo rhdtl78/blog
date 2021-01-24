@@ -122,11 +122,4 @@ Protected Variation(변경 보호)는 쉽게 말해 변경할 이유에 따라 �
 메서드의 응집도를 높여 분리했다면 객체의 응집도를 높일 차례다. 응집도 높은 메서드 중 객체의 책임에 맞지 않는 메서드를 올바른 책임을 진 객체로 옮기는 것이다.  
 리팩터링 결과는 올바름 책임을 갖고, 하나의 관심사에 집중되어있는 설계를 얻게 된다. 높은 캡슐화, 높은 응집도, 낮은 결합도의 설계가 구현되는 것이다.
 
----
-광고 - 파트너스 활동을 통해 일정액의 수수료를 제공받을 수 있음
-
 <a href="https://coupa.ng/bPPGvp" target="_blank" referrerpolicy="unsafe-url"><img src="https://static.coupangcdn.com/image/affiliate/banner/992b484450b1943cf3e528237901e6a2@2x.jpg" alt="오브젝트:코드로 이해하는 객체지향 설계" width="120" height="240"></a>
-<script src="https://ads-partners.coupang.com/g.js" type="text/javascript"></script>
-<script type="text/javascript">
-	new PartnersCoupang.G({"id":400629,"template":"carousel","trackingCode":"AF8809335","width":"680","height":"140"});
-</script>

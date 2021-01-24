@@ -12,13 +12,6 @@ draft: false
 priority: 1
 ---
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>
-	new PartnersCoupang.G({"id":400629,"template":"carousel","trackingCode":"AF8809335","width":"680","height":"140"});
-</script>
-
----
-
 ![화면](./ipad-pro-gen2/screen.jpeg)
 
 
@@ -102,8 +95,3 @@ iPad Pro 4세대 이전에 이미 Galaxy tab s7을 사용하고있었다. 미디
 기존에 태블릿 사용에 익숙했던 필자는 흔히 가성비 태블릿들을 전전했었다. 업무용으로 쓰다 필요없으면 처분하면서 여러 태블릿을 전전했으나 이제 ipad로 정착하게 되었다.  
 작업 사이에 작은 지연이 생각보다 업무의 흐름을 방해하는 경우가 많았었는데 ipad에서는 전혀 찾아볼 수 없었다. 
 
----
-
-<script>
-	new PartnersCoupang.G({"id":400629,"template":"carousel","trackingCode":"AF8809335","width":"680","height":"140"});
-</script>
