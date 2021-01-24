@@ -1,7 +1,7 @@
 ---
 template: post
 slug: /posts/object/chapter/05
-category: Study
+category: Object
 title: "[오브젝트] Chapter05. 책임 할당하기. - GRASP Pattern"
 date: "2021-01-19T00:00:00"
 description: "객체지향 프로그래밍"

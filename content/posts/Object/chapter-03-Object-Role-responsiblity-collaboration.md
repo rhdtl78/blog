@@ -1,7 +1,7 @@
 ---
 template: post
 slug: /posts/object/chapter/03
-category: Study
+category: Object
 title: "[오브젝트] Chapter03. 역할, 책임, 협력."
 date: "2021-01-18T00:00:00"
 description: "객체지향 프로그래밍"
