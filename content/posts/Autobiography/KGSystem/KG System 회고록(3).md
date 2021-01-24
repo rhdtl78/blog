@@ -105,9 +105,3 @@ OptionCrawler 또한 같은 라이브러리를 사용해 만들었다. 전달 �
 
 이 프로젝트를 진행한 기간이 내가 크게 성장 할 수 있던 기간이었고, 좀더 짜임새 있는 개발을 할 수 있던 기간이었다. 
 처음으로 Web application framework를 다뤘으며, React를 활용해 규모 있는 client를 구성했고, 이에 따른 성능 문제도 경험하고 개선할 수 있었다.
-
-
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>
-	new PartnersCoupang.G({"id":400629,"template":"carousel","trackingCode":"AF8809335","width":"680","height":"140"});
-</script>

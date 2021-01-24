@@ -133,8 +133,3 @@ $.off 로 더 이상 클릭 이벤트가 중복되게 바인드되는 현상은 
 ### 마무리
 이렇게 내가 배운 것을 여러 방면으로 시험해보며 방학이 끝나고 나는 다시 복학했다.
 이때 배운 것 덕분에 2018년도 여름학기 팀프로젝트에서 웹 분야의 담당으로 참여할 수 있었다.
-
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>
-	new PartnersCoupang.G({"id":400629,"template":"carousel","trackingCode":"AF8809335","width":"680","height":"140"});
-</script>

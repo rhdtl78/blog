@@ -15,9 +15,6 @@ priority: 1
 ![화면](./ipad-pro-gen2/screen.jpeg)
 
 
-<a style="display: inline-block;" href="https://coupa.ng/bPpbQd" target="_blank" referrerpolicy="unsafe-url"><img src="https://static.coupangcdn.com/image/affiliate/banner/6e68ad1a8ccf17ee67f8bb065439b825@2x.jpg" alt="Apple 2020년 iPad Pro 12.9 4세대, Wi-Fi, 128GB, Space Gray" width="120" height="240"></a>
-<a style="display: inline-block;" href="https://coupa.ng/bPpc0n" target="_blank" referrerpolicy="unsafe-url"><img src="https://static.coupangcdn.com/image/affiliate/banner/3d59098e1dfdd172820797b27fddb9fd@2x.jpg" alt="Apple 정품 애플펜슬 2세대 MU8F2KH/A, 단일 색상, 1개" width="120" height="240"></a>
-
 ### 맥북 다음으로 나의 마음을 사로잡은, 나를 애플 생태계로 몰아넣은 기기를 리뷰하려한다.
 
 iPad Pro 4세대 이전에 이미 Galaxy tab s7을 사용하고있었다. 미디어 소비용, 업무시 설계및 노트용을 잘 사용하고 있었으나, 맥과의 연동은 서드파티앱을 사용했어야 했고,  
@@ -95,3 +92,5 @@ iPad Pro 4세대 이전에 이미 Galaxy tab s7을 사용하고있었다. 미디
 기존에 태블릿 사용에 익숙했던 필자는 흔히 가성비 태블릿들을 전전했었다. 업무용으로 쓰다 필요없으면 처분하면서 여러 태블릿을 전전했으나 이제 ipad로 정착하게 되었다.  
 작업 사이에 작은 지연이 생각보다 업무의 흐름을 방해하는 경우가 많았었는데 ipad에서는 전혀 찾아볼 수 없었다. 
 
+<a style="display: inline-block;" href="https://coupa.ng/bPpbQd" target="_blank" referrerpolicy="unsafe-url"><img src="https://static.coupangcdn.com/image/affiliate/banner/6e68ad1a8ccf17ee67f8bb065439b825@2x.jpg" alt="Apple 2020년 iPad Pro 12.9 4세대, Wi-Fi, 128GB, Space Gray" width="120" height="240"></a>
+<a style="display: inline-block;" href="https://coupa.ng/bPpc0n" target="_blank" referrerpolicy="unsafe-url"><img src="https://static.coupangcdn.com/image/affiliate/banner/3d59098e1dfdd172820797b27fddb9fd@2x.jpg" alt="Apple 정품 애플펜슬 2세대 MU8F2KH/A, 단일 색상, 1개" width="120" height="240"></a>
