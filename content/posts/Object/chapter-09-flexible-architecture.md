@@ -1,9 +1,9 @@
 ---
 template: post
-slug: /posts/object/chapter/06
+slug: /posts/object/chapter/09
 category: Object
 title: "[오브젝트] Chapter06. 메시지와 인터페이스"
-date: "2021-01-24T00:00:00"
+date: "2021-01-30T18:00:00"
 description: "객체지향 프로그래밍"
 draft: false
 priority: 1
