@@ -2,7 +2,7 @@
 template: post
 slug: /posts/object/chapter/09
 category: Object
-title: "[오브젝트] Chapter06. 메시지와 인터페이스"
+title: "[오브젝트] Chapter09. 유연한 설계"
 date: "2021-01-30T18:00:00"
 description: "객체지향 프로그래밍"
 draft: false
