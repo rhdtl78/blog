@@ -1,0 +1,426 @@
+{
+  "header": {
+    "name": "JeongHun Kong",
+    "position": "Web Developer",
+    "img": {
+      "src": "https://github.com/rhdtl78.png",
+      "alt": "JeongHun Kong"
+    },
+    "location": "Ansan, Korea",
+    "contacts": [
+      {
+        "type": "telegram",
+        "link": "https://t.me/rhdtl78",
+        "linkName": "rhdtl78"
+      },
+      {
+        "type": "github",
+        "link": "https://github.com/rhdtl78",
+        "linkName": "rhdtl78"
+      }
+    ]
+  },
+  "pitchLine": "My passions are — web-development, hot tech, framework",
+  "topTech": [
+    "docker",
+    "spring",
+    "tomcat",
+    "apache",
+    "php",
+    "laravel",
+    "mysql",
+    "react",
+    "react-native",
+    "mobx",
+    "jquery",
+    "bootstrap",
+    "android",
+    "swift",
+    "objective-c"
+  ],
+  "tech": {
+    "apache": {
+      "name": "Apache",
+      "logo": "apache.svg",
+      "website": "https://httpd.apache.org",
+      "displayInTopList": true
+    },
+    "tomcat": {
+      "name": "tomcat",
+      "logo": "tomcat.png",
+      "website": "https://httpd.apache.org",
+      "displayInTopList": true
+    },
+    "php": {
+      "name": "PHP",
+      "logo": "php.svg",
+      "website": "https://www.php.net",
+      "displayInTopList": true
+    },
+    "laravel": {
+      "name": "Laravel",
+      "logo": "laravel.svg",
+      "website": "https://laravel.com",
+      "displayInTopList": true
+    },
+    "javascript": {
+      "name": "Javascript",
+      "logo": "javascript.png",
+      "website": "https://www.google.com/search?q=javascript&oq=javascript&aqs=chrome..69i57j69i60l2j69i65l3&sourceid=chrome&ie=UTF-8",
+      "displayInTopList": true
+    },
+    "jquery": {
+      "name": "jQuery",
+      "logo": "jquery.png",
+      "website": "https://jquery.com",
+      "displayInTopList": true
+    },
+    "bootstrap": {
+      "name": "Bootstrap",
+      "logo": "bootstrap.png",
+      "website": "https://jquery.com",
+      "displayInTopList": true
+    },
+    "react": {
+      "name": "React",
+      "logo": "react.svg",
+      "website": "https://github.com/facebook/react",
+      "displayInTopList": true
+    },
+    "react-native": {
+      "name": "React Native",
+      "logo": "react-native.png",
+      "website": "https://reactnative.dev/",
+      "displayInTopList": true
+    },
+    "redux": {
+      "name": "Redux",
+      "logo": "redux.svg",
+      "website": "https://redux.js.org/",
+      "displayInTopList": true
+    },
+    "reduxsaga": {
+      "name": "Redux-Saga",
+      "logo": "redux-saga.svg",
+      "website": "https://redux-saga.js.org/",
+      "displayInTopList": true
+    },
+    "mobx": {
+      "name": "MobX",
+      "logo": "mobx.svg",
+      "website": "https://mobx.js.org",
+      "displayInTopList": true
+    },
+    "mysql": {
+      "name": "MySQL",
+      "logo": "mysql.svg",
+      "website": "https://www.mysql.com/",
+      "displayInTopList": false
+    },
+    "swift": {
+      "name": "Swift",
+      "logo": "swift.svg",
+      "website": "https://developer.apple.com/kr/swift",
+      "displayInTopList": true
+    },
+    "objective-c": {
+      "name": "Objective-C",
+      "logo": "objc.svg",
+      "website": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html",
+      "displayInTopList": true
+    },
+    "android": {
+      "name": "Android",
+      "logo": "android.svg",
+      "website": "https://developer.android.com",
+      "displayInTopList": true
+    },
+    "spring": {
+      "name": "Spring framework",
+      "logo": "spring.svg",
+      "website": "https://spring.io",
+      "displayInTopList": true
+    },
+    "docker": {
+      "name": "Docker",
+      "logo": "docker.png",
+      "website": "https://docker.com",
+      "displayInTopList": true
+    }
+  },
+  "skills": {
+    "soft": {
+      "featured": [
+        "Focus on business needs",
+        "Team building / Leadership",
+        "Coaching",
+        "Decision making",
+        "Communication",
+        "Integrity"
+      ],
+      "other": [
+        "Scheduling",
+        "Risk Management",
+        "Critical Thinking",
+        "Problem Solving",
+        "Project Recovery",
+        "Task Management",
+        "Business Process Improvement",
+        "Budgeting",
+        "UX Prototyping",
+        "Requirements Analysis",
+        "Conflict Management",
+        "Policy Knowledge"
+      ]
+    },
+    "hard": {
+      "featured": [
+        "Webpack",
+        "ES6 / ES2021",
+        "React",
+        "React Native",
+        "MobX",
+        "Web Components",
+        "Docker",
+        "Spring",
+        "JPA"
+      ],
+      "other": [
+        "AWS",
+        "Bootstrap",
+        "CSS 3",
+        "GIT",
+        "D3.js",
+        "HTML 5",
+        "Jest",
+        "LESS",
+        "Regexp",
+        "REST",
+        "SASS",
+        "Socket.io",
+        "Styled Components",
+        "Vanilla JS",
+        "Underscore / Lodash",
+        "Github Actions"
+      ]
+    }
+  },
+  "experience": [
+    {
+      "company": {
+        "name": "KG System",
+        "logoHeight": 40,
+        "logo": "kgsystem.png",
+        "period": "Jun 2019 - Feb 2020"
+      },
+      "projects": [
+        {
+          "name": "MES For KG System",
+          "logoHeight": 40,
+          "logo": "",
+          "role": "Full Stack Web Developer",
+          "description": "생산 KG System 특화 관리 프로그램.",
+          "stack": {
+            "me": [
+              "React JS",
+              "MobX",
+              "Laravel",
+              "MySQL",
+              "Webpack",
+              "Bootstrap",
+              "Socket.io",
+              "Redis"
+            ],
+            "all": [
+              "Cron job scheduling"
+            ]
+          },
+          "achievements": [
+            "2019 대중소 상생형 스마트공장 지원 사업 유형 1-b",
+            "Convert native php code into Larvel Framework based code",
+            "Automation of Production Scheduling",
+            "Crawler for Production Scheduling",
+            "Crawler for Purchase Order Management",
+            "Alarming based on Redis and Laravel Echo"
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "SU System",
+        "logoHeight": 40,
+        "logo": "",
+        "period": "Jan 2019 - May 2019"
+      },
+      "projects": [
+        {
+          "name": "KGNet",
+          "logoHeight": 40,
+          "logo": "",
+          "role": "Full Stack Web Developer (Dispatched)",
+          "description": "생산 KG System 특화 관리 프로그램.",
+          "stack": {
+            "me": [
+              "React JS",
+              "MobX",
+              "Laravel",
+              "MySQL",
+              "Webpack",
+              "Bootstrap",
+              "Socket.io",
+              "jQuery"
+            ],
+            "all": []
+          },
+          "achievements": [
+            "BOM (Bill of Materials) Management Service",
+            "Production Process Monitoring Service",
+            "Cable Specification Sheet Renewal for KG System (KG System Original Data)",
+            "Multiple Application Servicing"
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "KG System",
+        "logoHeight": 40,
+        "logo": "kgsystem.png",
+        "period": "Jul 2018 - Aug 2018"
+      },
+      "projects": [
+        {
+          "name": "KGNet",
+          "logoHeight": 40,
+          "logo": "",
+          "role": "Full Stack Web Developer (Part-time)",
+          "description": "생산 KG System 특화 관리 프로그램 Renewal.",
+          "stack": {
+            "me": [
+              "Apache",
+              "PHP",
+              "MySQL",
+              "Bootstrap",
+              "jQuery",
+              "Git",
+              "jenkins"
+            ],
+            "all": []
+          },
+          "achievements": [
+            "Design 구현을 Bootstrap으로 변경",
+            "Spaghetti-code 정리",
+            "형상관리 툴 GIT 및 Github 적용"
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "KG System",
+        "logoHeight": 40,
+        "logo": "kgsystem.png",
+        "period": "Jan 2018 - Feb 2018"
+      },
+      "projects": [
+        {
+          "name": "KGNet",
+          "logoHeight": 40,
+          "logo": "",
+          "role": "Full Stack Web Developer (Part-time)",
+          "description": "생산 KG System 특화 관리 프로그램.",
+          "stack": {
+            "me": [
+              "Apache",
+              "PHP",
+              "MySQL",
+              "Bootstrap",
+              "jQuery"
+            ],
+            "all": []
+          },
+          "achievements": [
+            "ISO 9001 관련 문서 관리 서비스",
+            "Cable Specification Sheet for KG System"
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Polycube",
+        "logoHeight": 40,
+        "logo": "polycube.png",
+        "period": "May 2020 - May 2020"
+      },
+      "projects": [
+        {
+          "name": "Teakyung Polymer Maintaining",
+          "logoHeight": 40,
+          "logo": "",
+          "role": "Full Stack Web Developer",
+          "description": "태경 포리마 이슈트래커/푸시알리미 유지 보수",
+          "stack": {
+            "me": [
+              "Apache",
+              "Tomcat",
+              "Spring",
+              "MySQL",
+              "jQuery",
+              "Android",
+              "iOS"
+            ],
+            "all": []
+          },
+          "achievements": [
+            "앱 유지보수 (iOS/Android)",
+            "MySQL 버전 업그레이드 (5.6 --> 8.1)",
+            "서버 유지 보수",
+            "성능 개선"
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Polycube",
+        "logoHeight": 40,
+        "logo": "polycube.png",
+        "period": "June 2020 - August 2020"
+      },
+      "projects": [
+        {
+          "name": "Weatherpong Weather API Server transfer",
+          "logoHeight": 40,
+          "logo": "",
+          "role": "Backend Developer",
+          "description": "웨더퐁 기상 서버 이전 작업",
+          "stack": {
+            "me": [
+              "Apache",
+              "Tomcat",
+                "Springboot",
+              "JPA",
+              "MySQL"
+            ],
+            "all": []
+          },
+          "achievements": [
+            "기존 운영중인 기상서버를 대치",
+            "유닛 테스트",
+            "API 문서 자동화"
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "place": "Computer Science in Myongji University in Yongin, Korea",
+      "period": "2016 - now",
+      "degree": "Bachelor's Degree, leave of absence"
+    }
+  ],
+  "footer": "rhdtl78.github.io © 2020"
+}
