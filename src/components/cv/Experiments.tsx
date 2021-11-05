@@ -1,6 +1,6 @@
-import React from 'react';
-import { Card, Col, Row } from 'antd';
-import Tech from './tech';
+import React from 'react'
+import { Card, Col, Row } from 'reactstrap'
+import Tech from './tech'
 
 const Experiments = ({ experiments, tech }: Props) => (
   <>
@@ -55,7 +55,7 @@ const Experiments = ({ experiments, tech }: Props) => (
       </Row>
     </Card>
   </>
-);
+)
 
 interface Props {
   experiments: Experiment[];
@@ -71,4 +71,4 @@ interface Experiment {
   builtWith?: string[];
 }
 
-export default Experiments;
+export default Experiments

@@ -1,52 +1,48 @@
-import React from 'react';
-import {
-  Card, Row, Col, Tag,
-} from 'antd';
+import React from 'react'
+import { Card, Col, Row } from 'reactstrap'
 
 const SkillList = ({ skills }: Props) => (
-  <div>
-    <Row justify="space-around">
-      <Col span={11}>
-        <h3 className="text-center mt-5 mb-3">Soft skills</h3>
+  <Card className="mt-5 mb-3 p-2">
+    <Row className="justify-content-around">
+      <Col xs={6}>
+        <h3 className="text-center">Soft skills</h3>
       </Col>
-      <Col span={11} offset={1}>
-        <h3 className="text-center mt-5 mb-3">Hard skills</h3>
+      <Col xs={6}>
+        <h3 className="text-center">Hard skills</h3>
       </Col>
     </Row>
-    <Card>
-      <Row justify="space-around">
-        <Col span={11}>
-          <div>
-            {skills.soft.featured.map((skill) => (
-              <Tag color="#722ed1" key={skill} className="mb-1 text-base">
+    <Row className="justify-content-around">
+      <Col xs={12} md={6}>
+        <div>
+          {skills.soft.featured.map((skill) => (
+            <span key={skill} className="me-1 text-base badge" style={{ backgroundColor: '#722ed1' }}>
                 {skill}
-              </Tag>
-            ))}
-          </div>
-          {skills.soft.other.map((skill) => (
-            <Tag color="purple" key={skill} className="mb-1 text-base">
-              {skill}
-            </Tag>
+              </span>
           ))}
-        </Col>
-        <Col span={11} offset={1}>
-          <div>
-            {skills.hard.featured.map((skill) => (
-              <Tag color="#1890ff" key={skill} className="mb-1 text-base">
+        </div>
+        {skills.soft.other.map((skill) => (
+          <span key={skill} className="me-1 text-base badge" style={{ backgroundColor: 'purple' }}>
+              {skill}
+            </span>
+        ))}
+      </Col>
+      <Col xs={12} md={6}>
+        <div>
+          {skills.hard.featured.map((skill) => (
+            <span key={skill} className="me-1 text-base badge" style={{ backgroundColor: '#1890ff' }}>
                 {skill}
-              </Tag>
-            ))}
-          </div>
-          {skills.hard.other.map((skill) => (
-            <Tag color="blue" key={skill} className="mb-1 text-base">
-              {skill}
-            </Tag>
+              </span>
           ))}
-        </Col>
-      </Row>
-    </Card>
-  </div>
-);
+        </div>
+        {skills.hard.other.map((skill) => (
+          <span key={skill} className="me-1 text-base badge" style={{ backgroundColor: 'blue' }}>
+              {skill}
+            </span>
+        ))}
+      </Col>
+    </Row>
+  </Card>
+)
 
 interface Props {
   skills: {
@@ -60,4 +56,4 @@ interface SkillCollection {
   other: string[]
 }
 
-export default SkillList;
+export default SkillList

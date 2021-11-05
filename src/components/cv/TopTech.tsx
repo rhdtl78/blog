@@ -1,17 +1,17 @@
 import React from 'react';
-import { Col, Row } from 'antd';
+import { Card, Col, Row } from 'reactstrap'
 import Tech from './tech';
 
 const TopTech = ({ topTech, tech }: Props) => (
-  <div className="my-5">
-    <Row justify="space-around">
+  <Card className="my-5 p-3">
+    <Row className="justify-content-around">
       {topTech.map((techName) => (
         <Col
           xs={6}
           sm={6}
-          md={3}
-          lg={3}
-          xl={3}
+          md={2}
+          lg={2}
+          xl={1}
           className="text-center my-1"
           key={techName}
         >
@@ -27,7 +27,7 @@ const TopTech = ({ topTech, tech }: Props) => (
         </Col>
       ))}
     </Row>
-  </div>
+  </Card>
 );
 
 interface Props {

@@ -1,35 +1,30 @@
-import {
-  Card, Col, Divider, Row, Tag,
-} from 'antd';
-import React from 'react';
+import { Card, Col, Row, Badge } from 'reactstrap'
+import React from 'react'
+import Divider from '@site/src/components/divider'
 
 const Experience = ({ experience }: Props) => (
   <>
     <h3 className="text-center my-5">Work experience</h3>
-    <Card className="work-experience">
+    <Card className="work-experience p-4">
       {experience.map((item, i) => (
-        <Row justify="space-around" key={`${item.company.name}-${i}`}>
-          <Divider orientation="left" className={i === 0 && 'mt-0'}>
-            {item.company.period}
-          </Divider>
-          <Col span={4} className="hide-mobile">
+        <Row className="justify-content-around" key={`${item.company.name}-${i}`}>
+          <Divider className="mb-4">{item.company.period}</Divider>
+          <Col xs={2} className="hide-mobile">
             {item.company.logo ? (
-              <div>
-                <img
-                  src={`/companies/${item.company.logo}`}
-                  alt={item.company.name}
-                  className="max-w-3/4 inline"
-                />
-              </div>
+              <img
+                src={`/companies/${item.company.logo}`}
+                alt={item.company.name}
+                className="max-w-3/4 inline"
+              />
             ) : (
               <h2 className="text-2xl">{item.company.name}</h2>
             )}
           </Col>
-          <Col xs={24} sm={24} md={20} lg={20} xl={20}>
+          <Col xs={12} sm={12} md={10} lg={10} xl={10}>
             {item.projects.map((project) => (
-              <Row justify="space-around" key={project.name} className="mb-5">
+              <Row className="justify-content-around mb-5" key={project.name} >
                 {project.logo && (
-                  <Col span={5}>
+                  <Col xs={2}>
                     <img
                       src={`/companies/${project.logo}`}
                       alt={project.name}
@@ -37,7 +32,7 @@ const Experience = ({ experience }: Props) => (
                     />
                   </Col>
                 )}
-                <Col span={project.logo ? 19 : 24} className="text-lg">
+                <Col xs={project.logo ? 9 : 12} className="text-lg">
                   <h3>{project.role}</h3>
                   <p>{project.description}</p>
                   {project.achievements && (
@@ -50,15 +45,15 @@ const Experience = ({ experience }: Props) => (
                   <div className="py-1">
                     {project.stack.me
                     && project.stack.me.map((tech) => (
-                      <Tag color="#0B9B00" key={tech} className="mb-1 text-base">
+                      <Badge color="#0B9B00" key={tech} className="mb-1 text-base">
                         {tech}
-                      </Tag>
+                      </Badge>
                     ))}
                     {project.stack.all
                     && project.stack.all.map((tech) => (
-                      <Tag color="#a2a2a2" key={tech} className="mb-1 text-base">
+                      <Badge color="#a2a2a2" key={tech} className="mb-1 text-base">
                         {tech}
-                      </Tag>
+                      </Badge>
                     ))}
                   </div>
                 </Col>
@@ -70,7 +65,7 @@ const Experience = ({ experience }: Props) => (
       ))}
     </Card>
   </>
-);
+)
 
 interface Props {
   experience: ExperienceData[];
@@ -99,4 +94,4 @@ interface Project {
   }
 }
 
-export default Experience;
+export default Experience

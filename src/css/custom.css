@@ -27,6 +27,15 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+html[data-theme='dark'] .card {
+  background-color: #212529;
+}
+
+html[data-theme='dark'] {
+  --bs-body-bg: none;
+  --bs-body-color: none;
+}
+
 a {
   text-decoration: none !important;
 }

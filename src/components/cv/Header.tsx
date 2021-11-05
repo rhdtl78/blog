@@ -1,18 +1,18 @@
 import React from 'react';
-import { Col, Row } from 'antd';
+import { Col, Row } from 'reactstrap';
 
 const Header = ({ header }: Props) => (
-  <Row justify="space-around" align="middle">
-    <Col span={2} className="hide-mobile">
+  <Row className="justify-content-around align-content-center" >
+    <Col xs={1}>
       <a href="/cv.pdf" target="_blank" className="no-print">
         <img src="/logos/pdf.svg" height="50" alt="pdf icon" />
       </a>
     </Col>
-    <Col span={8} className="text-right">
+    <Col xs={4} className="text-right">
       <h2 className="text-2xl">{header.name}</h2>
       <h5>{header.position}</h5>
     </Col>
-    <Col span={4} className="text-center">
+    <Col xs={2} className="text-center">
       <a href="/">
         <img
           src={header.img.src}
@@ -22,7 +22,7 @@ const Header = ({ header }: Props) => (
         />
       </a>
     </Col>
-    <Col span={10} className="text-lg">
+    <Col xs={5} className="text-lg">
       <div>{header.location}</div>
       <>
         {header.contacts.map((contact) => (

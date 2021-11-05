@@ -1,7 +1,6 @@
-import React from 'react';
-import {
-  Card, Col, Divider, Row,
-} from 'antd';
+import React from 'react'
+import { Card, Col, Row } from 'reactstrap'
+import Divider from '@site/src/components/divider'
 
 const Volunteer = ({ volunteer }: Props) => (
   <>
@@ -9,9 +8,7 @@ const Volunteer = ({ volunteer }: Props) => (
     <Card>
       {volunteer.map((activity, i) => (
         <Row justify="space-around" key={activity.place} className="text-lg">
-          <Divider orientation="left" className={i === 0 && 'mt-0'}>
-            {activity.period}
-          </Divider>
+          <Divider>{activity.period}</Divider>
           <Col span={6}>
             <img
               src={`/companies/${activity.logo}`}
@@ -26,7 +23,7 @@ const Volunteer = ({ volunteer }: Props) => (
       ))}
     </Card>
   </>
-);
+)
 
 interface Props {
   volunteer: VolunteerActivity[];
@@ -39,4 +36,4 @@ interface VolunteerActivity {
   logo: string;
 }
 
-export default Volunteer;
+export default Volunteer
