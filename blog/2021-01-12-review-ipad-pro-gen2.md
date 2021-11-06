@@ -92,7 +92,7 @@ iPad Pro 4세대 이전에 이미 Galaxy tab s7을 사용하고있었다. 미디
 import CoupangPartners from '@site/src/components/coupang-partners'
 
 <CoupangPartners
-   partnersID="400629"
+   adID="527409"
    template="carousel"
    trackingCode="AF8809335"
    width={680}

@@ -88,7 +88,7 @@ tags:
 import CoupangPartners from '@site/src/components/coupang-partners'
 
 <CoupangPartners
-    partnersID="400629"
+    adID="527409"
     template="carousel"
     trackingCode="AF8809335"
     width={680}

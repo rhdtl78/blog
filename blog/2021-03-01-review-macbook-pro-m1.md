@@ -33,19 +33,10 @@ m1 을 네이티브하게 지원하는 프로그램들은 확실히 놀라울 �
 __자료출처: [Geekbench](https://browser.geekbench.com/v5/cpu/search?utf8=✓&q=MacBook+Pro+13)__
 
 ## 호환성
-많은 소프트웨어들이 Apple silicon 대응 버전을 출시하고 있지만, 아직 IDE, 플러그인 중 지원하지 않음이 종종 보고된다.
-현재 본인이 사용하고 있는 IDE의 지원 현황은 아래와 같다.
-* 지원
-    * IntelliJ IDEA
-    * Android Studio (Canary. Arctic fox Beta.)
-    * Xcode
-    * Visual Studio Code
-* 미지원
-    * Rider
-    * Unity Editor
-
 RN 을 사용한 개발 프로젝트에서는 JDK를 Zulu-11-ARM64 를 사용하면 node-gradle-plugin이 오동작하는 문제가 발생했다.
 [관련 이슈 링크](https://github.com/node-gradle/gradle-node-plugin/issues/152)
+
+많은 메이저 소프트웨어 제공자들은 발빠르게 M1 대응 빌드를 내놓고 있지만, 아직 불안정 한 것은 사실이다.
 
 ### Rosetta
 * Cocoapods
@@ -55,3 +46,14 @@ RN 을 사용한 개발 프로젝트에서는 JDK를 Zulu-11-ARM64 를 사용하
 * 기타 앱
     * 익숙하게 사용해오던 앱들이 아직 M1 대응이 안되었다면, 성능 자원을 잡어먹는 괴물들이된다. 위에서 언급한 Rider와  Unity는 아직 Apple Silicon 대응 버전을 사용하지 못하고 있다. 버그인지 Intellij, Rider, Unity를 함께 띄워두고 Intellij만 사용하고 있었는데 메모리 부족 경고를 받았다. 확인해보니 Unity와 Rider가 합쳐 7GB 이상의 메모리를 잡아먹고 있었다.
     * 음악, 편집 관련 업계에서도 플러그인 미지원 사례가 지속적으로 보이고 있다. 
+
+
+import CoupangPartners from '@site/src/components/coupang-partners'
+
+<CoupangPartners
+  adID="527409"
+  template="carousel"
+  trackingCode="AF8809335"
+  width={680}
+  height={140}
+/>
