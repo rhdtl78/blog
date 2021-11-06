@@ -3,11 +3,10 @@ title: "[오브젝트] Chapter03. 역할, 책임, 협력."
 description: "객체지향 프로그래밍"
 slug: /study/object/chapter/03
 category: Object
-date: "2021-01-18T00:00:00"
 tags:
-- Object
-- Book Study
-- OOP
+  - Object
+  - Book Study
+  - OOP
 ---
 
 객체지향 패러다임의 관점에서 핵심은 **역할(role), 책임(responsibility), 협력(collaboration)** 이다.  

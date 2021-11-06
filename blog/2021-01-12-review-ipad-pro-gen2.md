@@ -1,12 +1,12 @@
 ---
 title: "아이패드 프로 2세대 리뷰"
 description: "애플 생태계에 입문하게 만든 iPad Pro 2세대 리뷰"
+authors: [rhdtl78]
 slug: /blog/review/ipad-pro-gen2
 category: Review
 tags:
-- Review
-- iPad Pro Gen4
-date: "2021-01-12T00:00:00"
+  - Review
+  - iPad Pro Gen4
 ---
 
 ![화면](./ipad-pro-gen2/screen.jpeg)

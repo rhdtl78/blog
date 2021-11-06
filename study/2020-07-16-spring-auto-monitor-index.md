@@ -4,13 +4,10 @@ description: "Spring Boot + JPA + JUnit + Mockito"
 slug: /study/spring/auto-monitor
 category: Spring
 tags: 
-    - Spring
-    - Springboot
-    - TDD
-    - Mockito
-date: "2020-07-19T15:00:00"
-draft: false
-priority: 0
+  - Spring
+  - Springboot
+  - TDD
+  - Mockito
 ---
 
 # AutoMonitor 중간 정리

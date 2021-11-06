@@ -1,12 +1,12 @@
 ---
 title: "맥북 프로 2018 15인치 터치바 리뷰"
 description: "개발자로서 맥북프로를 2년간 사용한 후기."
+authors: [rhdtl78]
 slug: /blog/review/macbook-pro-2018-15-inch-touch-bar-review 
 category: Review 
 tags:
-- Review
-- Macbook Pro
-date: "2021-01-04T00:00:00"
+  - Review
+  - Macbook Pro
 ---
 ![스틸샷](./macbook-pro/IMG_0081.png)
 

@@ -3,11 +3,10 @@ title: "[오브젝트] Chapter01. 객체, 설계."
 description: "객체? 설계?"
 slug: /study/object/chapter/01
 category: Object
-date: "2021-01-09T00:00:00"
 tags:
-- Object
-- Book Study
-- OOP
+  - Object
+  - Book Study
+  - OOP
 ---
 # 객체
 ## 응집도와 캡슐화 (Encapsulation)

@@ -3,11 +3,10 @@ title: "[오브젝트] Chapter05. 책임 할당하기. - GRASP Pattern"
 description: "객체지향 프로그래밍"
 slug: /study/object/chapter/05
 category: Object
-date: "2021-01-19T00:00:00"
 tags:
-- Object
-- Book Study
-- OOP
+  - Object
+  - Book Study
+  - OOP
 ---
 
 책임에 초점을 맞춰 설계할 때 가장 큰 어려움은 어떤 객체에게 어떤 책임을 할당할지를 결정하기 쉽지 않다는 것이다.  

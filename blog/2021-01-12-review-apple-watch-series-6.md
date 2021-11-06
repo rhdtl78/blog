@@ -1,16 +1,16 @@
 ---
 title: "애플 워치 시리즈6 리뷰"
 description: "애플 워치 시리즈6 리뷰"
+authors: [rhdtl78]
 slug: /blog/review/apple-watch-series-6
 category: Review
-date: "2021-01-12T00:00:00"
 tags:
-- Review
-- Apple
-- Apple Watch Series 6
-- 애플 워치
-- 애플 워치 6
-- 애플 워치 시리즈 6
+  - Review
+  - Apple
+  - Apple Watch Series 6
+  - 애플 워치
+  - 애플 워치 6
+  - 애플 워치 시리즈 6
 ---
 
 ![대표 사진 - 애플 워치 시리즈 6 40mm](./apple-watch-serise-6/IMG_0129.jpeg)

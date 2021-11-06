@@ -3,11 +3,10 @@ title: "[오브젝트] Chapter06. 메시지와 인터페이스"
 description: "객체지향 프로그래밍"
 slug: /study/object/chapter/06
 category: Object
-date: "2021-01-24T00:00:00"
 tags:
-- Object
-- Book Study
-- OOP
+  - Object
+  - Book Study
+  - OOP
 ---
 
 클래스는 객체지향 프로그래밍을 위한 도구로서 많은 개발자들이 객체지향에 대해 생각하면 떠오르는 키워드일 것이다. 그러나 클래스는 프로그래밍 도구일 뿐 설계를 클래스에 초점을 두어선 안된다.  

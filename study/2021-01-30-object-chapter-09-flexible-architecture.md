@@ -3,11 +3,10 @@ title: "[오브젝트] Chapter09. 유연한 설계"
 description: "객체지향 프로그래밍"
 slug: /study/object/chapter/09
 category: Object
-date: "2021-01-30T18:00:00"
 tags:
-- Object
-- Book Study
-- OOP
+  - Object
+  - Book Study
+  - OOP
 ---
 
 ## 개방-폐쇄 원칙

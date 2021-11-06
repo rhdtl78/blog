@@ -4,7 +4,6 @@ description: "Apache kafka - 카프카, 데이터 플랫폼의 최강자 스터�
 slug: /study/kafka/chapter/03
 category: Kafka
 tags: [Kafka, Study]
-date: "2020-08-14T22:00:00"
 authors: [rhdtl78]
 ---
 

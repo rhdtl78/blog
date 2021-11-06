@@ -3,11 +3,10 @@ title: "[오브젝트] Chapter02. 객체지향 프로그래밍."
 description: "객체지향 프로그래밍"
 slug: /study/object/chapter/02
 category: Object
-date: "2021-01-11T00:00:00"
 tags:
-- Object
-- Book Study
-- OOP
+  - Object
+  - Book Study
+  - OOP
 ---
 
 ## 요구사항 확인

@@ -5,7 +5,6 @@ slug: /study/kafka/chapter/01
 category: Kafka
 tags: [Kafka, Study]
 authors: [rhdtl78]
-date: "2020-08-14T22:00:00"
 ---
 
 ## 개요
