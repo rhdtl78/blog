@@ -352,7 +352,7 @@
         "name": "Polycube",
         "logoHeight": 40,
         "logo": "polycube.png",
-        "period": "May 2020 - May 2020"
+        "period": "May 2020 - now"
       },
       "projects": [
         {
@@ -379,17 +379,7 @@
             "서버 유지 보수",
             "성능 개선"
           ]
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "Polycube",
-        "logoHeight": 40,
-        "logo": "polycube.png",
-        "period": "June 2020 - August 2020"
-      },
-      "projects": [
+        },
         {
           "name": "Weatherpong Weather API Server transfer",
           "logoHeight": 40,
@@ -400,7 +390,7 @@
             "me": [
               "Apache",
               "Tomcat",
-                "Springboot",
+              "Springboot",
               "JPA",
               "MySQL"
             ],
@@ -410,6 +400,25 @@
             "기존 운영중인 기상서버를 대치",
             "유닛 테스트",
             "API 문서 자동화"
+          ]
+        },
+        {
+          "name": "MyClair IoT Mobile Application",
+          "logoHeight": 40,
+          "logo": "",
+          "role": "Application Developer",
+          "description": "마이클레어 IoT 앱 제작 (Agust 2020 ~ May 2021)",
+          "stack": {
+            "me": [
+              "Typescript",
+              "React Native",
+              "Android",
+              "iOS",
+              "MQTT"
+            ],
+            "all": []
+          },
+          "achievements": [
           ]
         }
       ]
