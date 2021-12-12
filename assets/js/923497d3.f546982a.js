@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrhdtl_78_github_io=self.webpackChunkrhdtl_78_github_io||[]).push([[9100],{6287:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/i-pad-pro-gen-4","name":"iPad Pro Gen4","count":1,"permalink":"/blog/tags/i-pad-pro-gen-4"}')}}]);

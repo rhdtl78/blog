@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrhdtl_78_github_io=self.webpackChunkrhdtl_78_github_io||[]).push([[3636],{1896:function(l){l.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/apple","name":"Apple","count":1,"permalink":"/blog/tags/apple"}')}}]);
