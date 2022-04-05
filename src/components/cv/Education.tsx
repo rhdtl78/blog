@@ -12,11 +12,11 @@ const Education = ({ education }: Props) => (
           className="justify-content-around text-lg"
         >
           <Divider>{institution.period}</Divider>
-          <Col xs={5}>
+          <Col xs={12} md={5} className={"mt-2"}>
             <h3>{institution.place}</h3>
           </Col>
-          <Col xs={7}>
-            <h3>{institution.degree}</h3>
+          <Col xs={12} md={7} className={"mt-2"}>
+            <span>{institution.degree}</span>
           </Col>
         </Row>
       ))}

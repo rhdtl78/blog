@@ -211,6 +211,71 @@
         "name": "KG System",
         "logoHeight": 40,
         "logo": "kgsystem.png",
+        "period": "Jan 2018 - Feb 2018"
+      },
+      "projects": [
+        {
+          "name": "KGNet",
+          "logoHeight": 40,
+          "logo": "",
+          "role": "Full Stack Web Developer (Part-time)",
+          "description": "생산 KG System 특화 관리 프로그램.",
+          "stack": {
+            "me": [
+              "Apache",
+              "PHP",
+              "MySQL",
+              "Bootstrap",
+              "jQuery"
+            ],
+            "all": []
+          },
+          "achievements": [
+            "ISO 9001 관련 문서 관리 서비스",
+            "Cable Specification Sheet for KG System"
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "KG System",
+        "logoHeight": 40,
+        "logo": "kgsystem.png",
+        "period": "Jul 2018 - Aug 2018"
+      },
+      "projects": [
+        {
+          "name": "KGNet",
+          "logoHeight": 40,
+          "logo": "",
+          "role": "Full Stack Web Developer (Part-time)",
+          "description": "생산 KG System 특화 관리 프로그램 Renewal.",
+          "stack": {
+            "me": [
+              "Apache",
+              "PHP",
+              "MySQL",
+              "Bootstrap",
+              "jQuery",
+              "Git",
+              "jenkins"
+            ],
+            "all": []
+          },
+          "achievements": [
+            "Design 구현을 Bootstrap으로 변경",
+            "Spaghetti-code 정리",
+            "형상관리 툴 GIT 및 Github 적용"
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "KG System",
+        "logoHeight": 40,
+        "logo": "kgsystem.png",
         "period": "Jun 2019 - Feb 2020"
       },
       "projects": [
@@ -278,71 +343,6 @@
             "Production Process Monitoring Service",
             "Cable Specification Sheet Renewal for KG System (KG System Original Data)",
             "Multiple Application Servicing"
-          ]
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "KG System",
-        "logoHeight": 40,
-        "logo": "kgsystem.png",
-        "period": "Jul 2018 - Aug 2018"
-      },
-      "projects": [
-        {
-          "name": "KGNet",
-          "logoHeight": 40,
-          "logo": "",
-          "role": "Full Stack Web Developer (Part-time)",
-          "description": "생산 KG System 특화 관리 프로그램 Renewal.",
-          "stack": {
-            "me": [
-              "Apache",
-              "PHP",
-              "MySQL",
-              "Bootstrap",
-              "jQuery",
-              "Git",
-              "jenkins"
-            ],
-            "all": []
-          },
-          "achievements": [
-            "Design 구현을 Bootstrap으로 변경",
-            "Spaghetti-code 정리",
-            "형상관리 툴 GIT 및 Github 적용"
-          ]
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "KG System",
-        "logoHeight": 40,
-        "logo": "kgsystem.png",
-        "period": "Jan 2018 - Feb 2018"
-      },
-      "projects": [
-        {
-          "name": "KGNet",
-          "logoHeight": 40,
-          "logo": "",
-          "role": "Full Stack Web Developer (Part-time)",
-          "description": "생산 KG System 특화 관리 프로그램.",
-          "stack": {
-            "me": [
-              "Apache",
-              "PHP",
-              "MySQL",
-              "Bootstrap",
-              "jQuery"
-            ],
-            "all": []
-          },
-          "achievements": [
-            "ISO 9001 관련 문서 관리 서비스",
-            "Cable Specification Sheet for KG System"
           ]
         }
       ]

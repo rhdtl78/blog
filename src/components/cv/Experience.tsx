@@ -9,7 +9,7 @@ const Experience = ({ experience }: Props) => (
       {experience.map((item, i) => (
         <Row className="justify-content-around" key={`${item.company.name}-${i}`}>
           <Divider className="mb-4">{item.company.period}</Divider>
-          <Col xs={2} className="hide-mobile">
+          <Col xs={12} md={2} className="hide-mobile">
             {item.company.logo ? (
               <img
                 src={`/companies/${item.company.logo}`}
