@@ -18,7 +18,6 @@ const CV = () => (
     </Helmet>
     <Container className="bg-transparent p-md-5" fluid={"md"}>
       {data.header && <Header header={data.header} />}
-      {data.pitchLine && <PitchLine pitchLine={data.pitchLine} />}
       {data.tech && data.topTech && <TopTech topTech={data.topTech} tech={data.tech} />}
       {data.skills && <SkillList skills={data.skills} />}
       {data.experience && <Experience experience={data.experience} />}

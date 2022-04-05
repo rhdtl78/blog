@@ -9,9 +9,8 @@ const TopTech = ({ topTech, tech }: Props) => (
         <Col
           xs={6}
           sm={6}
-          md={2}
+          md={3}
           lg={2}
-          xl={1}
           className="text-center my-1"
           key={techName}
         >
