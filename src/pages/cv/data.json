@@ -420,6 +420,44 @@
           },
           "achievements": [
           ]
+        },
+        {
+          "name": "PokerMaster",
+          "logoHeight": 40,
+          "logo": "",
+          "role": "Backend Developer",
+          "description": "포커마스터 게임서버 고도화 (May 2021 ~ Nov 2021)",
+          "stack": {
+            "me": [
+              "Typescript",
+              "Docker",
+              "Nest.JS",
+              "Socket Programming"
+            ],
+            "all": ["Github Actions"]
+          },
+          "achievements": [
+            "Event driven programming"
+          ]
+        },
+        {
+          "name": "OCB Event",
+          "logoHeight": 40,
+          "logo": "",
+          "role": "Backend Developer",
+          "description": "OCB 이벤트 서버 운영 개발 (Nov 2021 ~ Now)",
+          "stack": {
+            "me": [
+              "Java",
+              "Maven",
+              "Spring Framework",
+              "Oracle"
+            ],
+            "all": ["Jenkins", "Jira", "Slack"]
+          },
+          "achievements": [
+            "Event driven programming"
+          ]
         }
       ]
     }
