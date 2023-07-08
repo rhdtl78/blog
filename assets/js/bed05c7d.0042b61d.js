@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrhdtl_78_github_io=self.webpackChunkrhdtl_78_github_io||[]).push([[9169],{1519:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/review","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrhdtl_78_github_io=self.webpackChunkrhdtl_78_github_io||[]).push([[1930],{9001:e=>{e.exports=JSON.parse('{"label":"Apple Watch Series 6","permalink":"/blog/tags/apple-watch-series-6","allTagsPath":"/blog/tags","count":1}')}}]);

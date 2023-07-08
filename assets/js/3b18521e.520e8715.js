@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrhdtl_78_github_io=self.webpackChunkrhdtl_78_github_io||[]).push([[2773],{8086:t=>{t.exports=JSON.parse('{"label":"Mockito","permalink":"/tags/mockito","allTagsPath":"/tags","count":1}')}}]);

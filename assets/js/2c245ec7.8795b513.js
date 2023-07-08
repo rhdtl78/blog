@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkrhdtl_78_github_io=self.webpackChunkrhdtl_78_github_io||[]).push([[9353],{5962:function(t){t.exports=JSON.parse('{"allTagsPath":"/tags","slug":"/tags/book-study","name":"Book Study","count":7,"permalink":"/tags/book-study"}')}}]);

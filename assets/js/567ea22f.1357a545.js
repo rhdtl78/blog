@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrhdtl_78_github_io=self.webpackChunkrhdtl_78_github_io||[]).push([[3636],{1896:l=>{l.exports=JSON.parse('{"label":"Apple","permalink":"/blog/tags/apple","allTagsPath":"/blog/tags","count":1}')}}]);

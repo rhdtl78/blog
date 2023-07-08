@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrhdtl_78_github_io=self.webpackChunkrhdtl_78_github_io||[]).push([[7636],{4290:a=>{a.exports=JSON.parse('{"label":"Macbook Pro","permalink":"/blog/tags/macbook-pro","allTagsPath":"/blog/tags","count":2}')}}]);

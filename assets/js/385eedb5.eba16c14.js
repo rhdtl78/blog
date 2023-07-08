@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrhdtl_78_github_io=self.webpackChunkrhdtl_78_github_io||[]).push([[5406],{7193:a=>{a.exports=JSON.parse('{"label":"Kafka","permalink":"/tags/kafka","allTagsPath":"/tags","count":2}')}}]);
