@@ -26,7 +26,7 @@ const Experience = ({experience}: Props) => (
                                 {project.logo && (
                                     <Col xs={2}>
                                         <img
-                                            src={`/companies/${project.logo}`}
+                                            src={project.logo.startsWith("http") ? project.logo : `/logos/${project.logo}`}
                                             alt={project.name}
                                             className="max-w-3/4 inline"
                                         />

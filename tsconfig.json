@@ -4,7 +4,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "types": ["node", "@docusaurus/module-type-aliases", "@docusaurus/theme-classic", "src/@types"],
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   },
   "include": ["src/"]
 }

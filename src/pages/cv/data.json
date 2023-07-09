@@ -208,65 +208,157 @@
   "experience": [
     {
       "company": {
-        "name": "KG System",
+        "name": "Polycube",
         "logoHeight": 40,
-        "logo": "kgsystem.png",
-        "period": "Jan 2018 - Feb 2018"
+        "logo": "polycube.png",
+        "period": "May 2020 - now"
       },
       "projects": [
         {
-          "name": "KGNet",
+          "name": "OK Cashbag Event",
           "logoHeight": 40,
-          "logo": "",
-          "role": "Full Stack Web Developer (Part-time)",
-          "description": "생산 KG System 특화 관리 프로그램.",
+          "logo": "https://play-lh.googleusercontent.com/E237vy5V-Orc7sLR98q56wSW7LVtfK1oqTL9k05nYW3UxYUksIxswQ1lDn5UlWQYVeX-=w240-h480-rw",
+          "role": "Full Stack Web Developer",
+          "description": "OKCashbag 이벤트 서버 운영 개발 (Nov 2021 ~ Now)",
           "stack": {
             "me": [
-              "Apache",
-              "PHP",
+              "Java",
+              "Maven",
+              "Gradle",
+              "Spring Framework",
+              "Oracle"
+            ],
+            "all": ["Jenkins", "Jira", "Slack"]
+          },
+          "achievements": [
+            "Handling large scale of traffic",
+            "Prevent duplicated user interaction",
+            "Migration from Maven to Gradle",
+            "쿠팡 구매 리워드 프로모션 이벤트.",
+            "OKCashbag NFT 멤버십"
+          ]
+        },
+        {
+          "name": "Shopping Advisor",
+          "logo": "",
+          "role": "Full Stack Web Developer & Project Leader",
+          "description": "PTS (Purchasement Tracking System) integrated OKCashbag point rewarding feature",
+          "stack": {
+            "me": [
+              "Java",
+              "Kotlin",
+              "Gradle",
+              "Springboot",
+              "JPA",
+              "Spring Batch",
+              "Redis",
               "MySQL",
-              "Bootstrap",
-              "jQuery"
+              "AWS ECS",
+              "Docker",
+              "Jenkins",
+              "Javascript",
+              "React JS"
+            ],
+            "all": [
+              "Jira", "Slack", "Datadog Monitoring"
+            ]
+          },
+          "achievements": [
+            "Dataflow & Entity Relation 설계 (/w DA#)",
+            "DA 로서 부분적인 직무 경험",
+            "회원 체계 개발",
+            "SK 내부 개인정보 관리 시스템 연동",
+            "코틀린을 사용한 첫 상용 프로그램 개발 경험"
+          ]
+        },
+        {
+          "name": "PokerMaster",
+          "logoHeight": 40,
+          "logo": "https://play-lh.googleusercontent.com/A4-AyA3rHSJJ9nZWplTtqQfQnWSBZWpPSlvnyWdppu9a1IMlQcdtj9W-is46UJQ7rm8=w240-h480-rw",
+          "role": "Backend Developer",
+          "description": "포커마스터 게임서버 고도화 (May 2021 ~ Nov 2021)",
+          "stack": {
+            "me": [
+              "Typescript",
+              "Docker",
+              "Nest.JS",
+              "Socket Programming"
+            ],
+            "all": ["Github Actions"]
+          },
+          "achievements": [
+            "Event driven programming"
+          ]
+        },
+        {
+          "name": "MyClair IoT Mobile Application",
+          "logoHeight": 40,
+          "logo": "https://play-lh.googleusercontent.com/BLLWPGl515e7x6cDxyaEDoxpFYX39YEoI8VU6d9hvr_84TTF4uA-lqtooufCNtMWny4=w240-h480-rw",
+          "role": "Application Developer",
+          "description": "마이클레어 IoT 앱 제작 (Agust 2020 ~ May 2021)",
+          "stack": {
+            "me": [
+              "Typescript",
+              "React Native",
+              "Android",
+              "iOS",
+              "MQTT"
             ],
             "all": []
           },
           "achievements": [
-            "ISO 9001 관련 문서 관리 서비스",
-            "Cable Specification Sheet for KG System"
+            "첫 상용 모바일 어플리케이션 개발",
+            "크로스 플랫폼 프레임워크"
           ]
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "KG System",
-        "logoHeight": 40,
-        "logo": "kgsystem.png",
-        "period": "Jul 2018 - Aug 2018"
-      },
-      "projects": [
+        },
         {
-          "name": "KGNet",
+          "name": "Weatherpong",
           "logoHeight": 40,
-          "logo": "",
-          "role": "Full Stack Web Developer (Part-time)",
-          "description": "생산 KG System 특화 관리 프로그램 Renewal.",
+          "logo": "https://play-lh.googleusercontent.com/lCkBmjKGuqgHzwXJACaNiDiFhU4IBfxZ5H2sJMJP_wkf2lV1M8d5rZu7nIvJ3qDGuJQ=w240-h480-rw",
+          "role": "Full Stack Developer",
+          "description": "웨더퐁 서비스 운영 개발",
           "stack": {
             "me": [
               "Apache",
-              "PHP",
+              "Tomcat",
+              "Springboot",
+              "JPA",
               "MySQL",
-              "Bootstrap",
+              "Android",
+              "AD Mediation"
+            ],
+            "all": []
+          },
+          "achievements": [
+            "기존 운영중인 기상서버를 대치",
+            "Test driven development",
+            "API 문서 자동화",
+            "기존 운영중인 클라이언트 앱 유지보수"
+          ]
+        },
+        {
+          "name": "Teakyung Polymer Maintaining",
+          "logoHeight": 40,
+          "logo": "https://play-lh.googleusercontent.com/9Y3GJFu554lPjHxG3O-iVWm75n70yWKf6aQp4riH3O2EVRgtfuNnJPCIlLh2H7ucUmY=w240-h480-rw",
+          "role": "Full Stack Web Developer",
+          "description": "태경 포리마 이슈트래커/푸시알리미 유지 보수",
+          "stack": {
+            "me": [
+              "Apache",
+              "Tomcat",
+              "Spring",
+              "MySQL",
               "jQuery",
-              "Git",
-              "jenkins"
+              "Android",
+              "iOS"
             ],
             "all": []
           },
           "achievements": [
-            "Design 구현을 Bootstrap으로 변경",
-            "Spaghetti-code 정리",
-            "형상관리 툴 GIT 및 Github 적용"
+            "앱 유지보수 (iOS/Android)",
+            "MySQL 버전 업그레이드 (5.6 --> 8.1)",
+            "서버 유지 보수",
+            "성능 개선"
           ]
         }
       ]
@@ -276,7 +368,7 @@
         "name": "KG System",
         "logoHeight": 40,
         "logo": "kgsystem.png",
-        "period": "Jun 2019 - Feb 2020"
+        "period": "Jul 2018 - Feb 2020"
       },
       "projects": [
         {
@@ -284,7 +376,7 @@
           "logoHeight": 40,
           "logo": "",
           "role": "Full Stack Web Developer",
-          "description": "생산 KG System 특화 관리 프로그램.",
+          "description": "생산 KG System 특화 관리 프로그램. (Jun 2019 - Feb 2020)",
           "stack": {
             "me": [
               "React JS",
@@ -308,6 +400,51 @@
             "Crawler for Purchase Order Management",
             "Alarming based on Redis and Laravel Echo"
           ]
+        },
+        {
+          "name": "KGNet",
+          "logoHeight": 40,
+          "logo": "",
+          "role": "Full Stack Web Developer (Jul 2018 - Aug 2018)",
+          "description": "생산 KG System 특화 관리 프로그램 Renewal.",
+          "stack": {
+            "me": [
+              "Apache",
+              "PHP",
+              "MySQL",
+              "Bootstrap",
+              "jQuery",
+              "Git",
+              "jenkins"
+            ],
+            "all": []
+          },
+          "achievements": [
+            "Design 구현을 Bootstrap으로 변경",
+            "Spaghetti-code 정리",
+            "형상관리 툴 GIT 및 Github 적용"
+          ]
+        },
+        {
+          "name": "KGNet",
+          "logoHeight": 40,
+          "logo": "",
+          "role": "Full Stack Web Developer (Jan 2018 - Feb 2018)",
+          "description": "생산 KG System 특화 관리 프로그램.",
+          "stack": {
+            "me": [
+              "Apache",
+              "PHP",
+              "MySQL",
+              "Bootstrap",
+              "jQuery"
+            ],
+            "all": []
+          },
+          "achievements": [
+            "ISO 9001 관련 문서 관리 서비스",
+            "Cable Specification Sheet for KG System"
+          ]
         }
       ]
     },
@@ -324,7 +461,7 @@
           "logoHeight": 40,
           "logo": "",
           "role": "Full Stack Web Developer (Dispatched)",
-          "description": "생산 KG System 특화 관리 프로그램.",
+          "description": "KG System 특화 생산 관리 프로그램.",
           "stack": {
             "me": [
               "React JS",
@@ -343,120 +480,6 @@
             "Production Process Monitoring Service",
             "Cable Specification Sheet Renewal for KG System (KG System Original Data)",
             "Multiple Application Servicing"
-          ]
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "Polycube",
-        "logoHeight": 40,
-        "logo": "polycube.png",
-        "period": "May 2020 - now"
-      },
-      "projects": [
-        {
-          "name": "Teakyung Polymer Maintaining",
-          "logoHeight": 40,
-          "logo": "",
-          "role": "Full Stack Web Developer",
-          "description": "태경 포리마 이슈트래커/푸시알리미 유지 보수",
-          "stack": {
-            "me": [
-              "Apache",
-              "Tomcat",
-              "Spring",
-              "MySQL",
-              "jQuery",
-              "Android",
-              "iOS"
-            ],
-            "all": []
-          },
-          "achievements": [
-            "앱 유지보수 (iOS/Android)",
-            "MySQL 버전 업그레이드 (5.6 --> 8.1)",
-            "서버 유지 보수",
-            "성능 개선"
-          ]
-        },
-        {
-          "name": "Weatherpong Weather API Server transfer",
-          "logoHeight": 40,
-          "logo": "",
-          "role": "Backend Developer",
-          "description": "웨더퐁 기상 서버 이전 작업",
-          "stack": {
-            "me": [
-              "Apache",
-              "Tomcat",
-              "Springboot",
-              "JPA",
-              "MySQL"
-            ],
-            "all": []
-          },
-          "achievements": [
-            "기존 운영중인 기상서버를 대치",
-            "유닛 테스트",
-            "API 문서 자동화"
-          ]
-        },
-        {
-          "name": "MyClair IoT Mobile Application",
-          "logoHeight": 40,
-          "logo": "",
-          "role": "Application Developer",
-          "description": "마이클레어 IoT 앱 제작 (Agust 2020 ~ May 2021)",
-          "stack": {
-            "me": [
-              "Typescript",
-              "React Native",
-              "Android",
-              "iOS",
-              "MQTT"
-            ],
-            "all": []
-          },
-          "achievements": [
-          ]
-        },
-        {
-          "name": "PokerMaster",
-          "logoHeight": 40,
-          "logo": "",
-          "role": "Backend Developer",
-          "description": "포커마스터 게임서버 고도화 (May 2021 ~ Nov 2021)",
-          "stack": {
-            "me": [
-              "Typescript",
-              "Docker",
-              "Nest.JS",
-              "Socket Programming"
-            ],
-            "all": ["Github Actions"]
-          },
-          "achievements": [
-            "Event driven programming"
-          ]
-        },
-        {
-          "name": "OCB Event",
-          "logoHeight": 40,
-          "logo": "",
-          "role": "Backend Developer",
-          "description": "OCB 이벤트 서버 운영 개발 (Nov 2021 ~ Now)",
-          "stack": {
-            "me": [
-              "Java",
-              "Maven",
-              "Spring Framework",
-              "Oracle"
-            ],
-            "all": ["Jenkins", "Jira", "Slack"]
-          },
-          "achievements": [
-            "Event driven programming"
           ]
         }
       ]
