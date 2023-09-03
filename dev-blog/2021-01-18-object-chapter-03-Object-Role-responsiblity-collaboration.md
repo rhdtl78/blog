@@ -1,7 +1,7 @@
 ---
 title: "[오브젝트] Chapter03. 역할, 책임, 협력."
 description: "객체지향 프로그래밍"
-slug: /study/object/chapter/03
+slug: /dev-blog/object/chapter/03
 category: Object
 tags:
   - Object

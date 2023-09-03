@@ -1,7 +1,7 @@
 ---
 title: "[오브젝트] Chapter02. 객체지향 프로그래밍."
 description: "객체지향 프로그래밍"
-slug: /study/object/chapter/02
+slug: /dev-blog/object/chapter/02
 category: Object
 tags:
   - Object

@@ -1,7 +1,7 @@
 ---
 title: "외부 설정"
 description: "Spring 외부 설정 학습"
-slug: /study/spring/external_configuration
+slug: /dev-blog/spring/external_configuration
 category: Spring
 tags: 
     - Spring
