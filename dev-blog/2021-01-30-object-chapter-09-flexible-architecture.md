@@ -1,7 +1,7 @@
 ---
 title: "[오브젝트] Chapter09. 유연한 설계"
 description: "객체지향 프로그래밍"
-slug: /study/object/chapter/09
+slug: /dev-blog/object/chapter/09
 category: Object
 tags:
   - Object

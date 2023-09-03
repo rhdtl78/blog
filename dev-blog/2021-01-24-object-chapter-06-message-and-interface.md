@@ -1,7 +1,7 @@
 ---
 title: "[오브젝트] Chapter06. 메시지와 인터페이스"
 description: "객체지향 프로그래밍"
-slug: /study/object/chapter/06
+slug: /dev-blog/object/chapter/06
 category: Object
 tags:
   - Object

@@ -1,7 +1,7 @@
 ---
 title: "SpringApplication (1)"
 description: "SpringApplication 학습"
-slug: /study/spring/spring-boot-application/1
+slug: /dev-blog/spring/spring-boot-application/1
 category: Spring
 tags: 
     - Spring
