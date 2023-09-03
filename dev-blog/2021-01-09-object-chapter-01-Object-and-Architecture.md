@@ -1,7 +1,7 @@
 ---
 title: "[오브젝트] Chapter01. 객체, 설계."
 description: "객체? 설계?"
-slug: /study/object/chapter/01
+slug: /dev-blog/object/chapter/01
 category: Object
 tags:
   - Object

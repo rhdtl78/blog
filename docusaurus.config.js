@@ -23,7 +23,7 @@ const config = {
       {
         docs: false,
         blog: {
-          path: "./study",
+          path: "./dev-blog",
           routeBasePath: "/",
           showReadingTime: true,
           // Please change this to your repo.

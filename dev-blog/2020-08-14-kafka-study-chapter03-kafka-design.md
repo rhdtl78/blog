@@ -1,7 +1,7 @@
 ---
 title: "[Kafka] Chapter03. 카프카 디자인"
 description: "Apache kafka - 카프카, 데이터 플랫폼의 최강자 스터디 - chapter 3"
-slug: /study/kafka/chapter/03
+slug: /dev-blog/kafka/chapter/03
 category: Kafka
 tags: [Kafka, Study]
 authors: [rhdtl78]

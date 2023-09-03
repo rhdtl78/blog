@@ -1,7 +1,7 @@
 ---
 title: "Spring boot TDD"
 description: "Spring Boot + JPA + JUnit + Mockito"
-slug: /study/spring/auto-monitor
+slug: /dev-blog/spring/auto-monitor
 category: Spring
 tags: 
   - Spring

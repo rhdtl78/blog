@@ -1,7 +1,7 @@
 ---
 title: "[Kafka] Chapter01. 카프카란 무엇인가."
 description: "Apache kafka - 카프카, 데이터 플랫폼의 최강자 스터디 - chapter 1"
-slug: /study/kafka/chapter/01
+slug: /dev-blog/kafka/chapter/01
 category: Kafka
 tags: [Kafka, Study]
 authors: [rhdtl78]
