@@ -14,7 +14,9 @@ jobs:
         with:
           node-version: 18.x
       - run: npm ci
-      - run: NODE_OPTION="--openssl-legacy-provider" npm run build
+      - run: npm run build
+        env:
+          NODE_OPTIONS: "--openssl-legacy-provider"
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
