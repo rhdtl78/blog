@@ -13,11 +13,10 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 18.x
-      - name: Build website
-        working-directory: ./
-        run: |
-          npm ci
-          NODE_OPTION="--openssl-legacy-provider" npm run build
+      - run: npm ci
+      - run: npm run build
+        env:
+          NODE_OPTIONS: "--openssl-legacy-provider"
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus

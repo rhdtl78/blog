@@ -11,6 +11,7 @@ tags:
 ---
 
 ## 어노테이션 기반 접근 제어를 AOP로 구현해보자.
+<!--truncate-->
 
 서버간 연동이 필요한 기능을 개발하다보면, 특정 `endpoint`들은 접근 IP가 제한되어야 할 필요가 생긴다.  
 Spring Security 의 Filter chain을 활용하는 것이 일반적이겠지만, spring security 가 없는 프로젝트의 경우 많은 부분을 설정해줘야하는 불편이 있다.
