@@ -1,0 +1,221 @@
+---
+title: "Ehcache와 RMI를 활용한 다중 서버 환경의 캐싱 문제 해결"
+description: "분산 환경에서의 Ehcache 설정과 RMI 기반 클러스터링 구현"
+slug: /dev-blog/programming/distributed-ehcache
+category: Programming
+tags:
+    - Spring
+    - EHCache
+    - 분산캐시
+---
+
+현재 프로젝트에서의 다중 서버 환경에서 발생한 embedded 캐싱 문제와 해결 방법에 대해 설명한다.
+<!--truncate-->
+# 문제 상황
+현재 맞고있는 프로젝트에서 사용중인 서버는 총 20대의 WAS 인스턴스와 각 2대씩을 연결하는 Apache 웹 서버로 구성되어있다. 물리 서버는 총 10대로 각각 2대의 인스턴스를 구동하고있다. 모든 서버는 온프레미스 환경이다. 업무상 연동하고있는 외부 서비스중 하나가 oauth2.0 기반 인증 절차를 사용한다.  해당 서비스에서 발급된 `authorize_code` 는 일회용이며, 이 코드를 통해 `access token`을 발급받을 수 있다. 프로젝트에서 제공하는 기능중에는 `authorize_code` 만을 가지고 `access token` 을 발급 받아  캐싱하여 만료될때까지 사용한다. 서버는 `authorize code` 를 key로 캐시를 구성하며 이후의 `access token` 발급 요청에 대비한다. 그러나 다중 인스턴스로 인해 캐시를 구성한 인스턴스가 아닌 다른 모든 인스턴스는 `access token` 발급에 실패한다.
+
+# 계획
+현재 Ehcache를 모든 이벤트 서버 WAS 인스턴스에서 embed 하여 사용중이다. Ehcache는 [클러스터링을 지원](https://www.ehcache.org/documentation/2.8/replication/rmi-replicated-caching.html)한다. 로컬 캐시 설정을 분산 캐시 설정으로 변경하여 인스턴스간 캐시 불일치 문제를 해결할 수 있다.
+단, 이번에 설정할 RMI 기반 클러스터링은 multicast 를 사용할 수 없다면, 수동으로 P2P 연결 설정을 진행해야 한다.
+ehcache가 지원하는 분산 캐시 설정에는 4가지가 있다. (2.x 한정).
+1. Terracota
+   Terracota 라는 별도의 서비스를 구동하여 구성하는 방식이다. 서버 구조를 변경할 수 없는 상황이므로 제외되었다.
+
+2. RMI (Remote Method Invocation)
+   본 글에서 설명하는 방식이다. 라우터나 스위치에서 지원하는 multicast ip 대역을 사용해 메시지를 주고받은 방식이다.
+
+3. JGROUP
+   RMI 와 비슷한 방식이지만, 설정이 더 복잡하고 연구할 시간이 모자르기에 선택 대상에서 제외했다.
+
+4. JMS
+   별도의 Message Queue를 사용하는 방식이다. 마찬가지로, 별도 서버를 구성할 수 없는 상황이기에 제외되었다.
+# 도안
+아래는 목표 구성의 도안이다. IP 주소는 물리 서버의 구분을 나타내기 위해 표시한 가상의 IP 이다.
+## AS-IS
+```text
+----- 172.0.0.1 -----
+|        WEB        |
+---------------------
+          |
+---- 172.0.0.2,3 ----
+|  App  |  EhCache  |
+---------------------  X 2
+|       TOMCAT      |
+---------------------
+```
+## TO-BE
+```text
+----- 172.0.0.1 -----
+|        WEB        |
+---------------------
+          |        RMI with multicast
+          |    ┌-----------------------┐
+----- 172.0.0.2 -----    ----- 172.0.0.3 -----
+|  App  |  EhCache  |    |  App  |  EhCache  |
+---------------------    ---------------------
+|       TOMCAT      |    |       TOMCAT      |
+---------------------    ---------------------
+```
+# 구현
+Java Config 로 설정한 내용은 아래와 같다. 본 글과 비슷한 키워드로 검색하면 많이 보이는 내용과 차이가 크게 없다.
+
+### build.gradle
+```groovy
+dependencies {
+	// ...
+	implementation 'net.sf.ehcache:ehcache:2.10.4'
+}
+```
+
+### Java Config
+```java
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import net.sf.ehcache.Cache;
+import net.sf.ehcache.config.CacheConfiguration;
+import net.sf.ehcache.config.CacheConfiguration.CacheEventListenerFactoryConfiguration;
+import net.sf.ehcache.config.DiskStoreConfiguration;
+import net.sf.ehcache.config.FactoryConfiguration;
+import net.sf.ehcache.config.PersistenceConfiguration;
+import net.sf.ehcache.config.PersistenceConfiguration.Strategy;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.cache.CacheManager;
+import org.springframework.cache.ehcache.EhCacheCacheManager;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+
+@Configuration
+public class CacheConfig {
+
+    private static final Logger log = LoggerFactory.getLogger(CacheConfig.class);
+
+    @Bean
+    @Primary
+    public CacheManager cacheManager() throws UnknownHostException {
+        net.sf.ehcache.CacheManager cacheManager = createEhCacheManager();
+        cacheManager.addCache(applyRmiEventListener(cacheChannelOneMin()));
+        return new EhCacheCacheManager(cacheManager);
+    }
+
+    private net.sf.ehcache.CacheManager createEhCacheManager() throws UnknownHostException {
+
+        net.sf.ehcache.config.Configuration configuration = new net.sf.ehcache.config.Configuration();
+        configuration.diskStore(new DiskStoreConfiguration().path("java.io.tmpdir"));
+        String hostname = InetAddress.getLocalHost().getHostName();
+        log.info("hostname: {}", hostname);
+
+        // multicast 설정
+        FactoryConfiguration factoryConfig = new FactoryConfiguration()
+            .className("net.sf.ehcache.distribution.RMICacheManagerPeerProviderFactory")
+            .properties("peerDiscovery=automatic,multicastGroupAddress=228.0.0.4,multicastGroupPort=4446,timeToLive=1")
+            .propertySeparator(",");
+        configuration.cacheManagerPeerProviderFactory(factoryConfig);
+
+        // 다른 노드에서 발생한 이벤트 리스너
+        FactoryConfiguration listenerFactoryConfig = new FactoryConfiguration()
+            .className("net.sf.ehcache.distribution.RMICacheManagerPeerListenerFactory")
+            .properties("socketTimeoutMillis=2000,port=40000,hostName=" + hostname)
+            .propertySeparator(",");
+        configuration.cacheManagerPeerListenerFactory(listenerFactoryConfig);
+
+        return net.sf.ehcache.CacheManager.create(configuration);
+    }
+
+    private Cache applyRmiEventListener(Cache cache) {
+        // 캐시 별 변경 내역을 전송 설정
+        CacheEventListenerFactoryConfiguration eventListenerFactoryConfig = new CacheEventListenerFactoryConfiguration()
+            .className("net.sf.ehcache.distribution.RMICacheReplicatorFactory")
+            // 동기적으로 변경사항을 전파, 새로운 캐시 항목 전파, 캐시 항목의 변경사항 전파, 캐시 항목의 변경 사항을 evict 하는 것으로 대체.
+            .properties("replicateAsynchronously=false,replicatePuts=true,replicateUpdates=true,replicateUpdatesViaCopy=false,replicateRemovals=true")
+            .propertySeparator(",");
+
+        cache.getCacheConfiguration()
+            .cacheEventListenerFactory(eventListenerFactoryConfig);
+
+        return cache;
+    }
+
+    private Cache cacheChannelOneMin() {
+        return new Cache(
+            new CacheConfiguration()
+                .name("cacheChannelOneMin")
+                .maxEntriesLocalHeap(1000)
+                .eternal(false)
+                .persistence(
+                    new PersistenceConfiguration()
+                        .strategy(Strategy.LOCALTEMPSWAP)
+                )
+                .timeToIdleSeconds(60)
+                .timeToLiveSeconds(60)
+                .memoryStoreEvictionPolicy("LRU")
+        );
+    }
+}
+```
+
+`RMICache` 로 보이는 내용들이 모두 RMI 기반 분산 캐시 설정에 관한 내용이다.  그러나 놀랍게도,
+
+> **<span style={{fontSize: '2rem'}}>위 설정은 제대로 동작하지 않는다.</span>**
+
+적용할 프로젝트가 Spring MVC project (springframework 5.X) 라서 그런것 같아, Springboot 2.x 로 클린 프로젝트를 구성후 시도했음에도, 각 인스턴스가 서로를 찾지 못하는 모습을 보였다. PeerProvider가 동작하지 않는 것 처럼, PeerListener는 등록된 것이 보였는데, PeerListener 가 아무 동작도 하지 않았다.
+
+이에 xml 기반 설정으로 옮긴 후에야 동작했다.
+
+### `ehcache.xml`
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://www.ehcache.org/ehcache.xsd">
+    <diskStore path="java.io.tmpdir"/>
+    <cacheManagerPeerProviderFactory
+        class="net.sf.ehcache.distribution.RMICacheManagerPeerProviderFactory"
+        properties="peerDiscovery=automatic,multicastGroupAddress=228.0.0.4,multicastGroupPort=4446,timeToLive=1"
+        propertySeparator=","
+    />
+
+    <cacheManagerPeerListenerFactory
+        class="net.sf.ehcache.distribution.RMICacheManagerPeerListenerFactory"
+        properties="hostName=localhost, port=40001, socketTimeoutMillis=2000"/>
+
+    <cache name="cacheChannelOneMin"
+        maxEntriesLocalHeap="1000"
+        maxEntriesLocalDisk="10000"
+        diskPersistent="false"
+        timeToIdleSeconds="1000"
+        timeToLiveSeconds="1000"
+        memoryStoreEvictionPolicy="LRU"
+    >
+        <cacheEventListenerFactory
+            class="net.sf.ehcache.distribution.RMICacheReplicatorFactory"
+            properties="replicateAsynchronously=false,replicatePuts=true,replicateUpdates=true,replicateUpdatesViaCopy=false,replicateRemovals=true"
+            propertySeparator=","
+        />
+    </cache>
+</ehcache>
+```
+
+### Java Config
+```java
+package com.skp.ocb.cache.config;
+
+import org.springframework.cache.CacheManager;
+import org.springframework.cache.ehcache.EhCacheCacheManager;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class CacheConfig {
+
+    @Bean
+    public CacheManager cacheManager() {
+        net.sf.ehcache.CacheManager cacheManager = new net.sf.ehcache.CacheManager();
+        return new EhCacheCacheManager(cacheManager);
+    }
+}
+```
+
+버전 문제인가 싶어, ehcache 3.x 도 알아봤으나, 3버전 부터 패키지 이름부터가 달라졌으며, RMI 관련 구현이 모두 사라진 상태였다.
+
+이후 더 이상 ehcache 로 할 수 있는 다른 분산 캐시 설정은 찾을 수 없었다. JGROUP은 multicast 기반이지만, 설정이 더 복잡해 관리 용이성을 위해 제외했고, JMS 는 별도의 MQ 서버가 필요해 선택 대상이 아니었다. terracota 역시 별도의 서비스가 필요함에 제외되었다.
